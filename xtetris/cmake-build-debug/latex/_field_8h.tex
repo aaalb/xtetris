@@ -1,0 +1,72 @@
+\hypertarget{_field_8h}{}\doxysection{Riferimenti per il file /\+Users/albertalibeaj/\+CLion\+Projects/xtetris/\+Field.h}
+\label{_field_8h}\index{/Users/albertalibeaj/CLionProjects/xtetris/Field.h@{/Users/albertalibeaj/CLionProjects/xtetris/Field.h}}
+
+
+Libreria che definisce le dimensioni del campo e lo inizializza vuoto.  
+
+
+\doxysubsection*{Definizioni}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_field_8h_ae25ecfc3e019c50aa0130a2c463cb07d}{INVALID\+\_\+\+ROWS}}~(4)
+\item 
+\#define \mbox{\hyperlink{_field_8h_a8866d339d53baaecb6650b65f7e612f6}{VALID\+\_\+\+ROWS}}~(15)
+\item 
+\#define \mbox{\hyperlink{_field_8h_aac8212b115bae561910e50f6727650a2}{FIELD\+\_\+\+ROWS}}~(\mbox{\hyperlink{_field_8h_ae25ecfc3e019c50aa0130a2c463cb07d}{INVALID\+\_\+\+ROWS}} + \mbox{\hyperlink{_field_8h_a8866d339d53baaecb6650b65f7e612f6}{VALID\+\_\+\+ROWS}})
+\item 
+\#define \mbox{\hyperlink{_field_8h_a9da2481ad52b5e998640e5aff6970292}{FIELD\+\_\+\+COLS}}~(10)
+\end{DoxyCompactItemize}
+\doxysubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_field_8h_a53b7e08176d60d6933940b96b7b54bed}{field\+\_\+init}} (int field\mbox{[}\mbox{\hyperlink{_field_8h_aac8212b115bae561910e50f6727650a2}{FIELD\+\_\+\+ROWS}}\mbox{]}\mbox{[}\mbox{\hyperlink{_field_8h_a9da2481ad52b5e998640e5aff6970292}{FIELD\+\_\+\+COLS}}\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+Libreria che definisce le dimensioni del campo e lo inizializza vuoto. 
+
+\begin{DoxyAuthor}{Autore}
+Albert Alibeaj 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentazione delle definizioni}
+\mbox{\Hypertarget{_field_8h_a9da2481ad52b5e998640e5aff6970292}\label{_field_8h_a9da2481ad52b5e998640e5aff6970292}} 
+\index{Field.h@{Field.h}!FIELD\_COLS@{FIELD\_COLS}}
+\index{FIELD\_COLS@{FIELD\_COLS}!Field.h@{Field.h}}
+\doxysubsubsection{\texorpdfstring{FIELD\_COLS}{FIELD\_COLS}}
+{\footnotesize\ttfamily \#define FIELD\+\_\+\+COLS~(10)}
+
+Colonne del campo \mbox{\Hypertarget{_field_8h_aac8212b115bae561910e50f6727650a2}\label{_field_8h_aac8212b115bae561910e50f6727650a2}} 
+\index{Field.h@{Field.h}!FIELD\_ROWS@{FIELD\_ROWS}}
+\index{FIELD\_ROWS@{FIELD\_ROWS}!Field.h@{Field.h}}
+\doxysubsubsection{\texorpdfstring{FIELD\_ROWS}{FIELD\_ROWS}}
+{\footnotesize\ttfamily \#define FIELD\+\_\+\+ROWS~(\mbox{\hyperlink{_field_8h_ae25ecfc3e019c50aa0130a2c463cb07d}{INVALID\+\_\+\+ROWS}} + \mbox{\hyperlink{_field_8h_a8866d339d53baaecb6650b65f7e612f6}{VALID\+\_\+\+ROWS}})}
+
+Totale delle righe del campo \mbox{\Hypertarget{_field_8h_ae25ecfc3e019c50aa0130a2c463cb07d}\label{_field_8h_ae25ecfc3e019c50aa0130a2c463cb07d}} 
+\index{Field.h@{Field.h}!INVALID\_ROWS@{INVALID\_ROWS}}
+\index{INVALID\_ROWS@{INVALID\_ROWS}!Field.h@{Field.h}}
+\doxysubsubsection{\texorpdfstring{INVALID\_ROWS}{INVALID\_ROWS}}
+{\footnotesize\ttfamily \#define INVALID\+\_\+\+ROWS~(4)}
+
+Le righe sopra il campo giocabile \mbox{\Hypertarget{_field_8h_a8866d339d53baaecb6650b65f7e612f6}\label{_field_8h_a8866d339d53baaecb6650b65f7e612f6}} 
+\index{Field.h@{Field.h}!VALID\_ROWS@{VALID\_ROWS}}
+\index{VALID\_ROWS@{VALID\_ROWS}!Field.h@{Field.h}}
+\doxysubsubsection{\texorpdfstring{VALID\_ROWS}{VALID\_ROWS}}
+{\footnotesize\ttfamily \#define VALID\+\_\+\+ROWS~(15)}
+
+Le righe del campo visibili e giocabili 
+
+\doxysubsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{_field_8h_a53b7e08176d60d6933940b96b7b54bed}\label{_field_8h_a53b7e08176d60d6933940b96b7b54bed}} 
+\index{Field.h@{Field.h}!field\_init@{field\_init}}
+\index{field\_init@{field\_init}!Field.h@{Field.h}}
+\doxysubsubsection{\texorpdfstring{field\_init()}{field\_init()}}
+{\footnotesize\ttfamily void field\+\_\+init (\begin{DoxyParamCaption}\item[{int}]{field\mbox{[}\+FIELD\+\_\+\+ROWS\mbox{]}\mbox{[}\+FIELD\+\_\+\+COLS\mbox{]} }\end{DoxyParamCaption})}
+
+Inizializza un campo di gioco vuoto 
+\begin{DoxyParams}{Parametri}
+{\em field} & array di interi che si vuole usare come campo \\
+\hline
+\end{DoxyParams}

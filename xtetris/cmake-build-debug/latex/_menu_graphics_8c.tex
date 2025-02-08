@@ -1,0 +1,92 @@
+\hypertarget{_menu_graphics_8c}{}\doxysection{Riferimenti per il file /\+Users/albertalibeaj/\+CLion\+Projects/xtetris/\+Menu\+Graphics.c}
+\label{_menu_graphics_8c}\index{/Users/albertalibeaj/CLionProjects/xtetris/MenuGraphics.c@{/Users/albertalibeaj/CLionProjects/xtetris/MenuGraphics.c}}
+
+
+File di implementazione delle funzioni grafiche utilizzate per la partita.  
+
+
+{\ttfamily \#include \char`\"{}Menu\+Graphics.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$menu.\+h$>$}\newline
+{\ttfamily \#include $<$ncurses.\+h$>$}\newline
+\doxysubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_menu_graphics_8c_a5399dbd28e59002586eab27ecae5be79}{all\+\_\+graphics\+\_\+init}} ()
+\item 
+void \mbox{\hyperlink{_menu_graphics_8c_a6edba618d7c953007d68b5629f601e78}{all\+\_\+graphics\+\_\+term}} ()
+\item 
+int \mbox{\hyperlink{_menu_graphics_8c_a3b99368d7304b294f3b1f289c436ee49}{print\+\_\+start\+\_\+menu}} ()
+\item 
+void \mbox{\hyperlink{_menu_graphics_8c_aa6806e4704d096736fcfabd5242f5da3}{main\+\_\+graphics\+\_\+free}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variabili}
+\begin{DoxyCompactItemize}
+\item 
+WINDOW $\ast$ \mbox{\hyperlink{_menu_graphics_8c_a112675ce8180a2ebd0d588ff24a85d18}{main\+\_\+menu\+\_\+win}}
+\item 
+WINDOW $\ast$ \mbox{\hyperlink{_menu_graphics_8c_aa5755770824a622d9c665920e33f666a}{title\+\_\+win}}
+\item 
+WINDOW $\ast$ \mbox{\hyperlink{_menu_graphics_8c_aefd72e36817c98cc55e27edc50257955}{author\+\_\+win}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+File di implementazione delle funzioni grafiche utilizzate per la partita. 
+
+\begin{DoxyAuthor}{Autore}
+Albert Alibeaj 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{_menu_graphics_8c_a5399dbd28e59002586eab27ecae5be79}\label{_menu_graphics_8c_a5399dbd28e59002586eab27ecae5be79}} 
+\index{MenuGraphics.c@{MenuGraphics.c}!all\_graphics\_init@{all\_graphics\_init}}
+\index{all\_graphics\_init@{all\_graphics\_init}!MenuGraphics.c@{MenuGraphics.c}}
+\doxysubsubsection{\texorpdfstring{all\_graphics\_init()}{all\_graphics\_init()}}
+{\footnotesize\ttfamily void all\+\_\+graphics\+\_\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prepara il terminale per la visualizzazione della grafica e l\textquotesingle{}input da tastiera \mbox{\Hypertarget{_menu_graphics_8c_a6edba618d7c953007d68b5629f601e78}\label{_menu_graphics_8c_a6edba618d7c953007d68b5629f601e78}} 
+\index{MenuGraphics.c@{MenuGraphics.c}!all\_graphics\_term@{all\_graphics\_term}}
+\index{all\_graphics\_term@{all\_graphics\_term}!MenuGraphics.c@{MenuGraphics.c}}
+\doxysubsubsection{\texorpdfstring{all\_graphics\_term()}{all\_graphics\_term()}}
+{\footnotesize\ttfamily void all\+\_\+graphics\+\_\+term (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Ripristina il terminale allo stato precedente \mbox{\Hypertarget{_menu_graphics_8c_aa6806e4704d096736fcfabd5242f5da3}\label{_menu_graphics_8c_aa6806e4704d096736fcfabd5242f5da3}} 
+\index{MenuGraphics.c@{MenuGraphics.c}!main\_graphics\_free@{main\_graphics\_free}}
+\index{main\_graphics\_free@{main\_graphics\_free}!MenuGraphics.c@{MenuGraphics.c}}
+\doxysubsubsection{\texorpdfstring{main\_graphics\_free()}{main\_graphics\_free()}}
+{\footnotesize\ttfamily void main\+\_\+graphics\+\_\+free (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Libera la memoria allocata per la grafica del menu iniziale \mbox{\Hypertarget{_menu_graphics_8c_a3b99368d7304b294f3b1f289c436ee49}\label{_menu_graphics_8c_a3b99368d7304b294f3b1f289c436ee49}} 
+\index{MenuGraphics.c@{MenuGraphics.c}!print\_start\_menu@{print\_start\_menu}}
+\index{print\_start\_menu@{print\_start\_menu}!MenuGraphics.c@{MenuGraphics.c}}
+\doxysubsubsection{\texorpdfstring{print\_start\_menu()}{print\_start\_menu()}}
+{\footnotesize\ttfamily int print\+\_\+start\+\_\+menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Alloca e stampa il menu iniziale e permette la scelta di un\textquotesingle{}opzione \begin{DoxyReturn}{Restituisce}
+indice dell\textquotesingle{}opzione selezionata 
+\end{DoxyReturn}
+
+
+\doxysubsection{Documentazione delle variabili}
+\mbox{\Hypertarget{_menu_graphics_8c_aefd72e36817c98cc55e27edc50257955}\label{_menu_graphics_8c_aefd72e36817c98cc55e27edc50257955}} 
+\index{MenuGraphics.c@{MenuGraphics.c}!author\_win@{author\_win}}
+\index{author\_win@{author\_win}!MenuGraphics.c@{MenuGraphics.c}}
+\doxysubsubsection{\texorpdfstring{author\_win}{author\_win}}
+{\footnotesize\ttfamily WINDOW$\ast$ author\+\_\+win}
+
+finestra che contiene la grafica del nome dell\textquotesingle{}autore \mbox{\Hypertarget{_menu_graphics_8c_a112675ce8180a2ebd0d588ff24a85d18}\label{_menu_graphics_8c_a112675ce8180a2ebd0d588ff24a85d18}} 
+\index{MenuGraphics.c@{MenuGraphics.c}!main\_menu\_win@{main\_menu\_win}}
+\index{main\_menu\_win@{main\_menu\_win}!MenuGraphics.c@{MenuGraphics.c}}
+\doxysubsubsection{\texorpdfstring{main\_menu\_win}{main\_menu\_win}}
+{\footnotesize\ttfamily WINDOW$\ast$ main\+\_\+menu\+\_\+win}
+
+finestra che contiene la grafica del menu iniziale ~\newline
+ \mbox{\Hypertarget{_menu_graphics_8c_aa5755770824a622d9c665920e33f666a}\label{_menu_graphics_8c_aa5755770824a622d9c665920e33f666a}} 
+\index{MenuGraphics.c@{MenuGraphics.c}!title\_win@{title\_win}}
+\index{title\_win@{title\_win}!MenuGraphics.c@{MenuGraphics.c}}
+\doxysubsubsection{\texorpdfstring{title\_win}{title\_win}}
+{\footnotesize\ttfamily WINDOW$\ast$ title\+\_\+win}
+
+finestra che contiene la grafica del nome X-\/\+Tetris 

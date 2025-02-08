@@ -1,0 +1,10 @@
+# ninja log v5
+1	35	1655927622885697048	CMakeFiles/xtetris.dir/Field.c.o	5452713cd2e25e9a
+2	78	1655927622931399985	CMakeFiles/xtetris.dir/MenuGraphics.c.o	bd17740ce52114bc
+4	55	1655927622902412451	CMakeFiles/xtetris.dir/Player.c.o	60f41d9301d951fe
+4	98	1655927622948981743	CMakeFiles/xtetris.dir/Pieces.c.o	71aa912648df12fe
+1	62	1655927622915365274	CMakeFiles/xtetris.dir/main.c.o	bbf424cfed4e316b
+2	121	1655927622973698626	CMakeFiles/xtetris.dir/GameGraphics.c.o	ad30f18912d535f0
+178	259	1655927623113406793	xtetris	30023f3c5177d250
+3	161	1655927623013519075	CMakeFiles/xtetris.dir/Moves.c.o	2bc9721922f607ab
+2	178	1655927623030127772	CMakeFiles/xtetris.dir/Game.c.o	4d8f74f50fce99d

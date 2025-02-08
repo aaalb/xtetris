@@ -1,0 +1,22 @@
+\hypertarget{index_intro_sec}{}\doxysection{Introduzione}\label{index_intro_sec}
+X-\/\+Tetris è una particolare versione del Tetris in cui si ha una quantità limitata di pezzi da scegliere. Puoi scegliere il pezzo che preferisci, sempre che il pezzo sia disponibile. Puoi giocare da solo, con un amico o contro il computer. Usa le frecce per muoverti e il tasto INVIO per confermare\hypertarget{index_install_sec}{}\doxysection{Installazione}\label{index_install_sec}
+Segui queste istruzioni per iniziare a giocare a X-\/\+Tetris\hypertarget{index_step1}{}\doxysubsection{Step 1\+: Installa gcc o clang}\label{index_step1}
+Se sei su Ubuntu puoi usare i comandi ~\newline
+{\ttfamily sudo apt update} ~\newline
+{\ttfamily sudo apt install build-\/essential}
+
+Se invece la tua macchina ha sistema operativo mac\+OS usa il comando ~\newline
+{\ttfamily xcode-\/select --install}\hypertarget{index_step2}{}\doxysubsection{Step 2\+: Installa ncurses}\label{index_step2}
+Per visualizzare la grafica del programma è necessaria la libreria ncurses, che permette di lavorare in modo più avanzato con la grafica del terminale.
+
+Se sei su Ubuntu puoi usare il comando ~\newline
+{\ttfamily sudo apt-\/get install libncurses5-\/dev libncursesw5-\/dev}
+
+Su mac\+OS ncurses si può installare tramite homebrew dal seguente comando ~\newline
+{\ttfamily brew install ncurses}\hypertarget{index_step3}{}\doxysubsection{Step 3\+: Compila il programma}\label{index_step3}
+Per compilare velocemente il programma, si può aprire il progetto con CLion e usare CMake per produrre l\textquotesingle{}eseguibile, tramite il file CMake\+Lists.\+txt che si occupa della compilazione e del linking. Per compilare invece da terminale, basta digitare il seguente comando
+
+{\ttfamily gcc -\/ansi -\/pedantic-\/errors -\/Wall -\/O3 -\/L\{ncurses\+\_\+lib\+\_\+path\} \mbox{\hyperlink{main_8c}{main.\+c}} \mbox{\hyperlink{_field_8c}{Field.\+c}} \mbox{\hyperlink{_pieces_8c}{Pieces.\+c}} \mbox{\hyperlink{_moves_8c}{Moves.\+c}} \mbox{\hyperlink{_game_8c}{Game.\+c}} \mbox{\hyperlink{_game_graphics_8c}{Game\+Graphics.\+c}} \mbox{\hyperlink{_menu_graphics_8c}{Menu\+Graphics.\+c}} \mbox{\hyperlink{_player_8c}{Player.\+c}} -\/lmenu -\/lncurses -\/oxtetris}
+
+dove \{ncurses\+\_\+lib\+\_\+path\} è il percorso delle librerie da linkare (menu e ncurses). Cambia a seconda dell\textquotesingle{}installazione. Un esempio è {\ttfamily /opt/homebrew/opt/ncurses/lib}\hypertarget{index_final}{}\doxysubsection{Installazione terminata}\label{index_final}
+Ora il programma è pronto per essere lanciato. Digita {\ttfamily ./xtetris} da terminale per iniziare. 

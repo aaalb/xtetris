@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>X-Tetris docs:  File sorgente /Users/albertalibeaj/CLionProjects/xtetris/Moves.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">X-Tetris docs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Cerca','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">/Users/albertalibeaj/CLionProjects/xtetris/Moves.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_moves_8h.html">Vai alla documentazione di questo file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#ifndef XTETRIS2_MOVES_H</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#define XTETRIS2_MOVES_H</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="_field_8h.html">Field.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="_pieces_8h.html">Pieces.h</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keywordtype">int</span> <a class="code hl_function" href="_moves_8h.html#ac9d9fd3abf8798e163332a5418c78b50">insert</a>(<span class="keywordtype">int</span> field[<a class="code hl_define" href="_field_8h.html#aac8212b115bae561910e50f6727650a2">FIELD_ROWS</a>][<a class="code hl_define" href="_field_8h.html#a9da2481ad52b5e998640e5aff6970292">FIELD_COLS</a>], <a class="code hl_struct" href="struct_tetramino.html">tet_t</a>* tet, <span class="keywordtype">int</span> column, <span class="keywordtype">int</span> rotation);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keywordtype">void</span> <a class="code hl_function" href="_moves_8h.html#a37e793594b90db6c52f184075e762a0e">rotate_dx</a>(<a class="code hl_struct" href="struct_tetramino.html">tet_t</a>* tet, <span class="keywordtype">int</span> n);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keywordtype">void</span> <a class="code hl_function" href="_moves_8h.html#a43cecd163ab3ae5c1b68ea55ba3eb996">rotate_sx</a>(<a class="code hl_struct" href="struct_tetramino.html">tet_t</a>* tet, <span class="keywordtype">int</span> n);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keywordtype">void</span> <a class="code hl_function" href="_moves_8h.html#aaa0ac8b9e781086a1a50399434296cf0">reset_shape</a>(<a class="code hl_struct" href="struct_tetramino.html">tet_t</a>* tet);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#endif </span><span class="comment">/*XTETRIS2_MOVES_H*/</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a_field_8h_html"><div class="ttname"><a href="_field_8h.html">Field.h</a></div><div class="ttdoc">Libreria che definisce le dimensioni del campo e lo inizializza vuoto.</div></div>
+<div class="ttc" id="a_field_8h_html_a9da2481ad52b5e998640e5aff6970292"><div class="ttname"><a href="_field_8h.html#a9da2481ad52b5e998640e5aff6970292">FIELD_COLS</a></div><div class="ttdeci">#define FIELD_COLS</div><div class="ttdef"><b>Definition:</b> Field.h:18</div></div>
+<div class="ttc" id="a_field_8h_html_aac8212b115bae561910e50f6727650a2"><div class="ttname"><a href="_field_8h.html#aac8212b115bae561910e50f6727650a2">FIELD_ROWS</a></div><div class="ttdeci">#define FIELD_ROWS</div><div class="ttdef"><b>Definition:</b> Field.h:16</div></div>
+<div class="ttc" id="a_moves_8h_html_a37e793594b90db6c52f184075e762a0e"><div class="ttname"><a href="_moves_8h.html#a37e793594b90db6c52f184075e762a0e">rotate_dx</a></div><div class="ttdeci">void rotate_dx(tet_t *tet, int n)</div><div class="ttdef"><b>Definition:</b> Moves.c:107</div></div>
+<div class="ttc" id="a_moves_8h_html_a43cecd163ab3ae5c1b68ea55ba3eb996"><div class="ttname"><a href="_moves_8h.html#a43cecd163ab3ae5c1b68ea55ba3eb996">rotate_sx</a></div><div class="ttdeci">void rotate_sx(tet_t *tet, int n)</div><div class="ttdef"><b>Definition:</b> Moves.c:149</div></div>
+<div class="ttc" id="a_moves_8h_html_aaa0ac8b9e781086a1a50399434296cf0"><div class="ttname"><a href="_moves_8h.html#aaa0ac8b9e781086a1a50399434296cf0">reset_shape</a></div><div class="ttdeci">void reset_shape(tet_t *tet)</div><div class="ttdef"><b>Definition:</b> Moves.c:285</div></div>
+<div class="ttc" id="a_moves_8h_html_ac9d9fd3abf8798e163332a5418c78b50"><div class="ttname"><a href="_moves_8h.html#ac9d9fd3abf8798e163332a5418c78b50">insert</a></div><div class="ttdeci">int insert(int field[FIELD_ROWS][FIELD_COLS], tet_t *tet, int column, int rotation)</div><div class="ttdef"><b>Definition:</b> Moves.c:58</div></div>
+<div class="ttc" id="a_pieces_8h_html"><div class="ttname"><a href="_pieces_8h.html">Pieces.h</a></div><div class="ttdoc">Libreria che definisce la struttura dei tetramini e le funzioni per la loro gestione.</div></div>
+<div class="ttc" id="astruct_tetramino_html"><div class="ttname"><a href="struct_tetramino.html">Tetramino</a></div><div class="ttdef"><b>Definition:</b> Pieces.h:20</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generato da&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

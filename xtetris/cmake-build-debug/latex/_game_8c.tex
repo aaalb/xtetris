@@ -1,0 +1,287 @@
+\hypertarget{_game_8c}{}\doxysection{Riferimenti per il file /\+Users/albertalibeaj/\+CLion\+Projects/xtetris/\+Game.c}
+\label{_game_8c}\index{/Users/albertalibeaj/CLionProjects/xtetris/Game.c@{/Users/albertalibeaj/CLionProjects/xtetris/Game.c}}
+
+
+File di implementazione delle funzioni utilizzate per la partita.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Game.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Game\+Graphics.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Player.\+h\char`\"{}}\newline
+\doxysubsection*{Definizioni}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_game_8c_a7a96a41ce787d161c2d9c2223b46f8ff}{MATCH\+\_\+\+LOST}}~(-\/1)
+\item 
+\#define \mbox{\hyperlink{_game_8c_a0f25bcb0820c5526101086d10208210f}{BACK\+\_\+\+TO\+\_\+\+MENU}}~(-\/2)
+\item 
+\#define \mbox{\hyperlink{_game_8c_ae3636e7839a8da07bfb1aabc42d7e7e3}{RETRY\+\_\+\+TURN}}~(-\/3)
+\end{DoxyCompactItemize}
+\doxysubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_game_8c_a1ddbe7b5be12e8193621545e4f3f771d}{tets\+\_\+available}} (\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} tets\mbox{[}\mbox{\hyperlink{_pieces_8h_a0285e99e1babc9994ba2048d86ab775b}{TET\+\_\+\+TYPES}}\mbox{]})
+\item 
+int \mbox{\hyperlink{_game_8c_a476f2e965750109f1296596b25e2e37e}{choose\+\_\+tet}} (\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} tets\mbox{[}\mbox{\hyperlink{_pieces_8h_a0285e99e1babc9994ba2048d86ab775b}{TET\+\_\+\+TYPES}}\mbox{]})
+\item 
+int \mbox{\hyperlink{_game_8c_afae3096e9e58ac1896b47c57bc8ca9f8}{choose\+\_\+rot}} (\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} $\ast$tet)
+\item 
+int \mbox{\hyperlink{_game_8c_aa35bc12d622e4720b43ed1e4bdf616b0}{choose\+\_\+col}} (int field\mbox{[}\mbox{\hyperlink{_field_8h_aac8212b115bae561910e50f6727650a2}{FIELD\+\_\+\+ROWS}}\mbox{]}\mbox{[}\mbox{\hyperlink{_field_8h_a9da2481ad52b5e998640e5aff6970292}{FIELD\+\_\+\+COLS}}\mbox{]}, \mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} $\ast$tet, int rot, int player)
+\item 
+void \mbox{\hyperlink{_game_8c_a1e61bad9a4cf5471504427945c1cb012}{xor\+\_\+rows}} (int field\mbox{[}\mbox{\hyperlink{_field_8h_aac8212b115bae561910e50f6727650a2}{FIELD\+\_\+\+ROWS}}\mbox{]}\mbox{[}\mbox{\hyperlink{_field_8h_a9da2481ad52b5e998640e5aff6970292}{FIELD\+\_\+\+COLS}}\mbox{]}, int rows)
+\item 
+int \mbox{\hyperlink{_game_8c_ae5b55b3a935ea93b17c824363e96c2e5}{confirm\+\_\+exit}} ()
+\item 
+int \mbox{\hyperlink{_game_8c_a9ca0e4a05676308128476fc24df8187b}{turn}} (int field\mbox{[}\mbox{\hyperlink{_field_8h_aac8212b115bae561910e50f6727650a2}{FIELD\+\_\+\+ROWS}}\mbox{]}\mbox{[}\mbox{\hyperlink{_field_8h_a9da2481ad52b5e998640e5aff6970292}{FIELD\+\_\+\+COLS}}\mbox{]}, \mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} tets\mbox{[}\mbox{\hyperlink{_pieces_8h_a0285e99e1babc9994ba2048d86ab775b}{TET\+\_\+\+TYPES}}\mbox{]}, int player, int $\ast$p\+\_\+score)
+\item 
+int \mbox{\hyperlink{_game_8c_a7a1b223719064bab0e0e8b1bcdeda549}{com\+\_\+turn}} (int field\mbox{[}\mbox{\hyperlink{_field_8h_aac8212b115bae561910e50f6727650a2}{FIELD\+\_\+\+ROWS}}\mbox{]}\mbox{[}\mbox{\hyperlink{_field_8h_a9da2481ad52b5e998640e5aff6970292}{FIELD\+\_\+\+COLS}}\mbox{]}, \mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} tets\mbox{[}\mbox{\hyperlink{_pieces_8h_a0285e99e1babc9994ba2048d86ab775b}{TET\+\_\+\+TYPES}}\mbox{]}, int player, int $\ast$p\+\_\+score)
+\item 
+void \mbox{\hyperlink{_game_8c_af5f90b46352127153212970677e6b732}{single\+\_\+init}} (int field\mbox{[}\mbox{\hyperlink{_field_8h_aac8212b115bae561910e50f6727650a2}{FIELD\+\_\+\+ROWS}}\mbox{]}\mbox{[}\mbox{\hyperlink{_field_8h_a9da2481ad52b5e998640e5aff6970292}{FIELD\+\_\+\+COLS}}\mbox{]}, \mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} tets\mbox{[}\mbox{\hyperlink{_pieces_8h_a0285e99e1babc9994ba2048d86ab775b}{TET\+\_\+\+TYPES}}\mbox{]})
+\item 
+void \mbox{\hyperlink{_game_8c_ae544ad2f5e5af7ac6a54ce7eb4254222}{single\+\_\+start\+\_\+game}} (int field\mbox{[}\mbox{\hyperlink{_field_8h_aac8212b115bae561910e50f6727650a2}{FIELD\+\_\+\+ROWS}}\mbox{]}\mbox{[}\mbox{\hyperlink{_field_8h_a9da2481ad52b5e998640e5aff6970292}{FIELD\+\_\+\+COLS}}\mbox{]}, \mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} tets\mbox{[}\mbox{\hyperlink{_pieces_8h_a0285e99e1babc9994ba2048d86ab775b}{TET\+\_\+\+TYPES}}\mbox{]})
+\item 
+void \mbox{\hyperlink{_game_8c_a0daa83b44aae29f3cb852a9f69b204ab}{single\+\_\+end\+\_\+game}} (\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} tets\mbox{[}\mbox{\hyperlink{_pieces_8h_a0285e99e1babc9994ba2048d86ab775b}{TET\+\_\+\+TYPES}}\mbox{]})
+\item 
+void \mbox{\hyperlink{_game_8c_ad33283fe6e1b93c2f4d481e07b61c01e}{multi\+\_\+init}} (int f1\mbox{[}\mbox{\hyperlink{_field_8h_aac8212b115bae561910e50f6727650a2}{FIELD\+\_\+\+ROWS}}\mbox{]}\mbox{[}\mbox{\hyperlink{_field_8h_a9da2481ad52b5e998640e5aff6970292}{FIELD\+\_\+\+COLS}}\mbox{]}, int f2\mbox{[}\mbox{\hyperlink{_field_8h_aac8212b115bae561910e50f6727650a2}{FIELD\+\_\+\+ROWS}}\mbox{]}\mbox{[}\mbox{\hyperlink{_field_8h_a9da2481ad52b5e998640e5aff6970292}{FIELD\+\_\+\+COLS}}\mbox{]}, \mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} tets\mbox{[}\mbox{\hyperlink{_pieces_8h_a0285e99e1babc9994ba2048d86ab775b}{TET\+\_\+\+TYPES}}\mbox{]})
+\item 
+void \mbox{\hyperlink{_game_8c_a5e562809124be1f220bb481110032a17}{multi\+\_\+start\+\_\+game}} (int f1\mbox{[}\mbox{\hyperlink{_field_8h_aac8212b115bae561910e50f6727650a2}{FIELD\+\_\+\+ROWS}}\mbox{]}\mbox{[}\mbox{\hyperlink{_field_8h_a9da2481ad52b5e998640e5aff6970292}{FIELD\+\_\+\+COLS}}\mbox{]}, int f2\mbox{[}\mbox{\hyperlink{_field_8h_aac8212b115bae561910e50f6727650a2}{FIELD\+\_\+\+ROWS}}\mbox{]}\mbox{[}\mbox{\hyperlink{_field_8h_a9da2481ad52b5e998640e5aff6970292}{FIELD\+\_\+\+COLS}}\mbox{]}, \mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} tets\mbox{[}\mbox{\hyperlink{_pieces_8h_a0285e99e1babc9994ba2048d86ab775b}{TET\+\_\+\+TYPES}}\mbox{]}, int com)
+\item 
+void \mbox{\hyperlink{_game_8c_a6c2f059464ae08b15859231810cd4399}{multi\+\_\+end\+\_\+game}} (\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} tets\mbox{[}\mbox{\hyperlink{_pieces_8h_a0285e99e1babc9994ba2048d86ab775b}{TET\+\_\+\+TYPES}}\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+File di implementazione delle funzioni utilizzate per la partita. 
+
+\begin{DoxyAuthor}{Autore}
+Albert Alibeaj 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentazione delle definizioni}
+\mbox{\Hypertarget{_game_8c_a0f25bcb0820c5526101086d10208210f}\label{_game_8c_a0f25bcb0820c5526101086d10208210f}} 
+\index{Game.c@{Game.c}!BACK\_TO\_MENU@{BACK\_TO\_MENU}}
+\index{BACK\_TO\_MENU@{BACK\_TO\_MENU}!Game.c@{Game.c}}
+\doxysubsubsection{\texorpdfstring{BACK\_TO\_MENU}{BACK\_TO\_MENU}}
+{\footnotesize\ttfamily \#define BACK\+\_\+\+TO\+\_\+\+MENU~(-\/2)}
+
+Macro che identifica che la partita è stata terminata per tornare al menu \mbox{\Hypertarget{_game_8c_a7a96a41ce787d161c2d9c2223b46f8ff}\label{_game_8c_a7a96a41ce787d161c2d9c2223b46f8ff}} 
+\index{Game.c@{Game.c}!MATCH\_LOST@{MATCH\_LOST}}
+\index{MATCH\_LOST@{MATCH\_LOST}!Game.c@{Game.c}}
+\doxysubsubsection{\texorpdfstring{MATCH\_LOST}{MATCH\_LOST}}
+{\footnotesize\ttfamily \#define MATCH\+\_\+\+LOST~(-\/1)}
+
+Macro che identifica che la partita è stata persa dopo una mossa \mbox{\Hypertarget{_game_8c_ae3636e7839a8da07bfb1aabc42d7e7e3}\label{_game_8c_ae3636e7839a8da07bfb1aabc42d7e7e3}} 
+\index{Game.c@{Game.c}!RETRY\_TURN@{RETRY\_TURN}}
+\index{RETRY\_TURN@{RETRY\_TURN}!Game.c@{Game.c}}
+\doxysubsubsection{\texorpdfstring{RETRY\_TURN}{RETRY\_TURN}}
+{\footnotesize\ttfamily \#define RETRY\+\_\+\+TURN~(-\/3)}
+
+Macro che identifica che una mossa è stata annullata e non ci sono state modifiche 
+
+\doxysubsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{_game_8c_aa35bc12d622e4720b43ed1e4bdf616b0}\label{_game_8c_aa35bc12d622e4720b43ed1e4bdf616b0}} 
+\index{Game.c@{Game.c}!choose\_col@{choose\_col}}
+\index{choose\_col@{choose\_col}!Game.c@{Game.c}}
+\doxysubsubsection{\texorpdfstring{choose\_col()}{choose\_col()}}
+{\footnotesize\ttfamily int choose\+\_\+col (\begin{DoxyParamCaption}\item[{int}]{field\mbox{[}\+FIELD\+\_\+\+ROWS\mbox{]}\mbox{[}\+FIELD\+\_\+\+COLS\mbox{]},  }\item[{\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} $\ast$}]{tet,  }\item[{int}]{rot,  }\item[{int}]{player }\end{DoxyParamCaption})}
+
+Tramite input da tastiera, fa scegliere la colonna del campo stampando un\textquotesingle{}anteprima 
+\begin{DoxyParams}{Parametri}
+{\em field} & campo su cui scegliere la colonna \\
+\hline
+{\em tet} & tetramino da inserire \\
+\hline
+{\em rot} & numero rotazioni verso destra dalla forma base \\
+\hline
+{\em player} & giocatore a cui appartiene il campo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+numero di colonna scelto 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_game_8c_afae3096e9e58ac1896b47c57bc8ca9f8}\label{_game_8c_afae3096e9e58ac1896b47c57bc8ca9f8}} 
+\index{Game.c@{Game.c}!choose\_rot@{choose\_rot}}
+\index{choose\_rot@{choose\_rot}!Game.c@{Game.c}}
+\doxysubsubsection{\texorpdfstring{choose\_rot()}{choose\_rot()}}
+{\footnotesize\ttfamily int choose\+\_\+rot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} $\ast$}]{tet }\end{DoxyParamCaption})}
+
+Tramite input da tastiera, fa scegliere la rotazione del tetramino stampandola 
+\begin{DoxyParams}{Parametri}
+{\em tet} & tetramino da ruotare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+numero di rotazioni verso destra a partire dalla forma base 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_game_8c_a476f2e965750109f1296596b25e2e37e}\label{_game_8c_a476f2e965750109f1296596b25e2e37e}} 
+\index{Game.c@{Game.c}!choose\_tet@{choose\_tet}}
+\index{choose\_tet@{choose\_tet}!Game.c@{Game.c}}
+\doxysubsubsection{\texorpdfstring{choose\_tet()}{choose\_tet()}}
+{\footnotesize\ttfamily int choose\+\_\+tet (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}}}]{tets\mbox{[}\+TET\+\_\+\+TYPES\mbox{]} }\end{DoxyParamCaption})}
+
+Tramite input da tastiera, fa scegliere il tetramino stampandolo 
+\begin{DoxyParams}{Parametri}
+{\em tets} & array di tetramini da cui scegliere \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+indice del tetramino all\textquotesingle{}interno dell\textquotesingle{}array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_game_8c_a7a1b223719064bab0e0e8b1bcdeda549}\label{_game_8c_a7a1b223719064bab0e0e8b1bcdeda549}} 
+\index{Game.c@{Game.c}!com\_turn@{com\_turn}}
+\index{com\_turn@{com\_turn}!Game.c@{Game.c}}
+\doxysubsubsection{\texorpdfstring{com\_turn()}{com\_turn()}}
+{\footnotesize\ttfamily int com\+\_\+turn (\begin{DoxyParamCaption}\item[{int}]{field\mbox{[}\+FIELD\+\_\+\+ROWS\mbox{]}\mbox{[}\+FIELD\+\_\+\+COLS\mbox{]},  }\item[{\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}}}]{tets\mbox{[}\+TET\+\_\+\+TYPES\mbox{]},  }\item[{int}]{player,  }\item[{int $\ast$}]{p\+\_\+score }\end{DoxyParamCaption})}
+
+Turno completo del computer. Scelta casuale di tetramino, rotazione, colonna e inserimento 
+\begin{DoxyParams}{Parametri}
+{\em field} & campo su cui inserire il tetramino \\
+\hline
+{\em tets} & array da cui scegliere il tetramino \\
+\hline
+{\em player} & giocatore a cui attribuire il turno \\
+\hline
+{\em p\+\_\+score} & punteggio del giocatore, aggiornato a ogni turno \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+valore positivo se ci sono ancora tetramini utilizzabili, valore negativo se si ha perso, bisogna uscire o ripetre il turno 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_game_8c_ae5b55b3a935ea93b17c824363e96c2e5}\label{_game_8c_ae5b55b3a935ea93b17c824363e96c2e5}} 
+\index{Game.c@{Game.c}!confirm\_exit@{confirm\_exit}}
+\index{confirm\_exit@{confirm\_exit}!Game.c@{Game.c}}
+\doxysubsubsection{\texorpdfstring{confirm\_exit()}{confirm\_exit()}}
+{\footnotesize\ttfamily int confirm\+\_\+exit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Attende l\textquotesingle{}input dell\textquotesingle{}utente per confermare l\textquotesingle{}uscita dalla partita \begin{DoxyReturn}{Restituisce}
+valore del tasto premuto 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_game_8c_a6c2f059464ae08b15859231810cd4399}\label{_game_8c_a6c2f059464ae08b15859231810cd4399}} 
+\index{Game.c@{Game.c}!multi\_end\_game@{multi\_end\_game}}
+\index{multi\_end\_game@{multi\_end\_game}!Game.c@{Game.c}}
+\doxysubsubsection{\texorpdfstring{multi\_end\_game()}{multi\_end\_game()}}
+{\footnotesize\ttfamily void multi\+\_\+end\+\_\+game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}}}]{tets\mbox{[}\+TET\+\_\+\+TYPES\mbox{]} }\end{DoxyParamCaption})}
+
+Libera le risorse occupate durante la partita multiplayer e attende un input da tastiera prima di proseguire 
+\begin{DoxyParams}{Parametri}
+{\em tets} & array dei tetramini da deallocare \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_game_8c_ad33283fe6e1b93c2f4d481e07b61c01e}\label{_game_8c_ad33283fe6e1b93c2f4d481e07b61c01e}} 
+\index{Game.c@{Game.c}!multi\_init@{multi\_init}}
+\index{multi\_init@{multi\_init}!Game.c@{Game.c}}
+\doxysubsubsection{\texorpdfstring{multi\_init()}{multi\_init()}}
+{\footnotesize\ttfamily void multi\+\_\+init (\begin{DoxyParamCaption}\item[{int}]{f1\mbox{[}\+FIELD\+\_\+\+ROWS\mbox{]}\mbox{[}\+FIELD\+\_\+\+COLS\mbox{]},  }\item[{int}]{f2\mbox{[}\+FIELD\+\_\+\+ROWS\mbox{]}\mbox{[}\+FIELD\+\_\+\+COLS\mbox{]},  }\item[{\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}}}]{tets\mbox{[}\+TET\+\_\+\+TYPES\mbox{]} }\end{DoxyParamCaption})}
+
+Inizializza campi, tetramini e grafica per una partita multiplayer 
+\begin{DoxyParams}{Parametri}
+{\em f1} & array da usare come campo per il giocatore 1 \\
+\hline
+{\em f2} & array da usare come campo per il giocatore 2 \\
+\hline
+{\em tets} & array di tetramini da inizializzare \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_game_8c_a5e562809124be1f220bb481110032a17}\label{_game_8c_a5e562809124be1f220bb481110032a17}} 
+\index{Game.c@{Game.c}!multi\_start\_game@{multi\_start\_game}}
+\index{multi\_start\_game@{multi\_start\_game}!Game.c@{Game.c}}
+\doxysubsubsection{\texorpdfstring{multi\_start\_game()}{multi\_start\_game()}}
+{\footnotesize\ttfamily void multi\+\_\+start\+\_\+game (\begin{DoxyParamCaption}\item[{int}]{f1\mbox{[}\+FIELD\+\_\+\+ROWS\mbox{]}\mbox{[}\+FIELD\+\_\+\+COLS\mbox{]},  }\item[{int}]{f2\mbox{[}\+FIELD\+\_\+\+ROWS\mbox{]}\mbox{[}\+FIELD\+\_\+\+COLS\mbox{]},  }\item[{\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}}}]{tets\mbox{[}\+TET\+\_\+\+TYPES\mbox{]},  }\item[{int}]{com }\end{DoxyParamCaption})}
+
+Prepara e inizia una partita multiplayer e la prosegue finchè non termina 
+\begin{DoxyParams}{Parametri}
+{\em f1} & array che si vuole usare come campo del giocatore 1 \\
+\hline
+{\em f2} & array che si vuole usare come campo del giocatore 2 \\
+\hline
+{\em tets} & array dei tetramini da usare durante la partita \\
+\hline
+{\em com} & se TRUE, il giocatore 2 è il computer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_game_8c_a0daa83b44aae29f3cb852a9f69b204ab}\label{_game_8c_a0daa83b44aae29f3cb852a9f69b204ab}} 
+\index{Game.c@{Game.c}!single\_end\_game@{single\_end\_game}}
+\index{single\_end\_game@{single\_end\_game}!Game.c@{Game.c}}
+\doxysubsubsection{\texorpdfstring{single\_end\_game()}{single\_end\_game()}}
+{\footnotesize\ttfamily void single\+\_\+end\+\_\+game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}}}]{tets\mbox{[}\+TET\+\_\+\+TYPES\mbox{]} }\end{DoxyParamCaption})}
+
+Libera le risorse occupate durante la partita singleplayer e attende un input da tastiera prima di proseguire 
+\begin{DoxyParams}{Parametri}
+{\em tets} & array dei tetramini da deallocare \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_game_8c_af5f90b46352127153212970677e6b732}\label{_game_8c_af5f90b46352127153212970677e6b732}} 
+\index{Game.c@{Game.c}!single\_init@{single\_init}}
+\index{single\_init@{single\_init}!Game.c@{Game.c}}
+\doxysubsubsection{\texorpdfstring{single\_init()}{single\_init()}}
+{\footnotesize\ttfamily void single\+\_\+init (\begin{DoxyParamCaption}\item[{int}]{field\mbox{[}\+FIELD\+\_\+\+ROWS\mbox{]}\mbox{[}\+FIELD\+\_\+\+COLS\mbox{]},  }\item[{\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}}}]{tets\mbox{[}\+TET\+\_\+\+TYPES\mbox{]} }\end{DoxyParamCaption})}
+
+Inizializza campo, tetramini e grafica per una partita singleplayer 
+\begin{DoxyParams}{Parametri}
+{\em field} & array da usare come campo di gioco \\
+\hline
+{\em tets} & array di tetramini da inizializzare \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_game_8c_ae544ad2f5e5af7ac6a54ce7eb4254222}\label{_game_8c_ae544ad2f5e5af7ac6a54ce7eb4254222}} 
+\index{Game.c@{Game.c}!single\_start\_game@{single\_start\_game}}
+\index{single\_start\_game@{single\_start\_game}!Game.c@{Game.c}}
+\doxysubsubsection{\texorpdfstring{single\_start\_game()}{single\_start\_game()}}
+{\footnotesize\ttfamily void single\+\_\+start\+\_\+game (\begin{DoxyParamCaption}\item[{int}]{field\mbox{[}\+FIELD\+\_\+\+ROWS\mbox{]}\mbox{[}\+FIELD\+\_\+\+COLS\mbox{]},  }\item[{\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}}}]{tets\mbox{[}\+TET\+\_\+\+TYPES\mbox{]} }\end{DoxyParamCaption})}
+
+Prepara e inizia una partita singleplayer e la prosegue finchè non termina 
+\begin{DoxyParams}{Parametri}
+{\em field} & array che si vuole usare come campo \\
+\hline
+{\em tets} & array dei tetramini da usare durante la partita \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_game_8c_a1ddbe7b5be12e8193621545e4f3f771d}\label{_game_8c_a1ddbe7b5be12e8193621545e4f3f771d}} 
+\index{Game.c@{Game.c}!tets\_available@{tets\_available}}
+\index{tets\_available@{tets\_available}!Game.c@{Game.c}}
+\doxysubsubsection{\texorpdfstring{tets\_available()}{tets\_available()}}
+{\footnotesize\ttfamily int tets\+\_\+available (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}}}]{tets\mbox{[}\+TET\+\_\+\+TYPES\mbox{]} }\end{DoxyParamCaption})}
+
+Controlla se ci sono ancora tetramini disponibili da usare 
+\begin{DoxyParams}{Parametri}
+{\em tets} & array di tetramini da controllare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+1 se ci sono ancora tetramini utilizzabili, 0 altrimenti 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_game_8c_a9ca0e4a05676308128476fc24df8187b}\label{_game_8c_a9ca0e4a05676308128476fc24df8187b}} 
+\index{Game.c@{Game.c}!turn@{turn}}
+\index{turn@{turn}!Game.c@{Game.c}}
+\doxysubsubsection{\texorpdfstring{turn()}{turn()}}
+{\footnotesize\ttfamily int turn (\begin{DoxyParamCaption}\item[{int}]{field\mbox{[}\+FIELD\+\_\+\+ROWS\mbox{]}\mbox{[}\+FIELD\+\_\+\+COLS\mbox{]},  }\item[{\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}}}]{tets\mbox{[}\+TET\+\_\+\+TYPES\mbox{]},  }\item[{int}]{player,  }\item[{int $\ast$}]{p\+\_\+score }\end{DoxyParamCaption})}
+
+Turno completo di un giocatore. Sceglta di tetramino, rotazione, colonna e inserimento 
+\begin{DoxyParams}{Parametri}
+{\em field} & campo su cui inserire il tetramino \\
+\hline
+{\em tets} & array da cui scegliere il tetramino \\
+\hline
+{\em player} & giocatore a cui attribuire il turno \\
+\hline
+{\em p\+\_\+score} & punteggio del giocatore, aggiornato a ogni turno \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+valore positivo se ci sono ancora tetramini utilizzabili, valore negativo se si ha perso, bisogna uscire o ripetre il turno 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_game_8c_a1e61bad9a4cf5471504427945c1cb012}\label{_game_8c_a1e61bad9a4cf5471504427945c1cb012}} 
+\index{Game.c@{Game.c}!xor\_rows@{xor\_rows}}
+\index{xor\_rows@{xor\_rows}!Game.c@{Game.c}}
+\doxysubsubsection{\texorpdfstring{xor\_rows()}{xor\_rows()}}
+{\footnotesize\ttfamily void xor\+\_\+rows (\begin{DoxyParamCaption}\item[{int}]{field\mbox{[}\+FIELD\+\_\+\+ROWS\mbox{]}\mbox{[}\+FIELD\+\_\+\+COLS\mbox{]},  }\item[{int}]{rows }\end{DoxyParamCaption})}
+
+Inverte le ultime righe del campo 
+\begin{DoxyParams}{Parametri}
+{\em field} & campo su cui inveritire le righe \\
+\hline
+{\em rows} & numero di righe a partire dal basso da invertire \\
+\hline
+\end{DoxyParams}

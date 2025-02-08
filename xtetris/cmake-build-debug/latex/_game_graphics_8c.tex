@@ -1,0 +1,354 @@
+\hypertarget{_game_graphics_8c}{}\doxysection{Riferimenti per il file /\+Users/albertalibeaj/\+CLion\+Projects/xtetris/\+Game\+Graphics.c}
+\label{_game_graphics_8c}\index{/Users/albertalibeaj/CLionProjects/xtetris/GameGraphics.c@{/Users/albertalibeaj/CLionProjects/xtetris/GameGraphics.c}}
+
+
+File di implementazione delle funzioni grafiche utilizzate per la partita.  
+
+
+{\ttfamily \#include \char`\"{}Game\+Graphics.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$ncurses.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Player.\+h\char`\"{}}\newline
+\doxysubsection*{Definizioni}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_game_graphics_8c_aef75f616b9a3fdb10d38395dfb996873}{COLOR\+\_\+\+ORANGE}}~8
+\item 
+\#define \mbox{\hyperlink{_game_graphics_8c_a16e6f8917a46044c1506956776cc7979}{COLOR\+\_\+\+INV}}~9
+\end{DoxyCompactItemize}
+\doxysubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_game_graphics_8c_a63790e021bbe6eb4ee0525657d2c8b3f}{init\+\_\+colors}} ()
+\item 
+void \mbox{\hyperlink{_game_graphics_8c_a7e35ac30bac3dba531abcddb832b56a9}{print\+\_\+field}} (int field\mbox{[}\mbox{\hyperlink{_field_8h_aac8212b115bae561910e50f6727650a2}{FIELD\+\_\+\+ROWS}}\mbox{]}\mbox{[}\mbox{\hyperlink{_field_8h_a9da2481ad52b5e998640e5aff6970292}{FIELD\+\_\+\+COLS}}\mbox{]}, WINDOW $\ast$win)
+\item 
+void \mbox{\hyperlink{_game_graphics_8c_af79d149fe5aeff86ab4431d0aceec2ce}{print\+\_\+score}} (int value, WINDOW $\ast$win)
+\item 
+void \mbox{\hyperlink{_game_graphics_8c_a5a9ec1278beb3adfb42f672afb96190b}{print\+\_\+text\+\_\+helper}} (char $\ast$info, WINDOW $\ast$win, int y\+\_\+start, int x\+\_\+start, int n\+\_\+rows, int n\+\_\+cols)
+\item 
+void \mbox{\hyperlink{_game_graphics_8c_ad1f9b0f16c22065c594046d7090462c7}{single\+\_\+graphics\+\_\+init}} ()
+\item 
+void \mbox{\hyperlink{_game_graphics_8c_af83bd7d240e6871c6b4be0f887b186e8}{multi\+\_\+graphics\+\_\+init}} ()
+\item 
+void \mbox{\hyperlink{_game_graphics_8c_af2091d43d573cbae6a8543fca9c71672}{print\+\_\+tet}} (\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} tet)
+\item 
+void \mbox{\hyperlink{_game_graphics_8c_a05d07d13775440ac81d3a0903905032a}{print\+\_\+info}} (char $\ast$info)
+\item 
+void \mbox{\hyperlink{_game_graphics_8c_a94076ca6e85e191d5347876d03d596c6}{print\+\_\+game\+\_\+over}} (char $\ast$info)
+\item 
+void \mbox{\hyperlink{_game_graphics_8c_a60e87ca23acb293f0813a9513843c3d1}{single\+\_\+graphics\+\_\+free}} ()
+\item 
+void \mbox{\hyperlink{_game_graphics_8c_aab84050db52467f88c9758ed260c54ef}{multi\+\_\+graphics\+\_\+free}} ()
+\item 
+void \mbox{\hyperlink{_game_graphics_8c_adb8bec540bfee30a8ed42c235e8c6533}{game\+\_\+over\+\_\+graphics\+\_\+free}} ()
+\item 
+void \mbox{\hyperlink{_game_graphics_8c_a62247fd098369a87484c95c326d9110c}{print\+\_\+player\+\_\+field}} (int field\mbox{[}\mbox{\hyperlink{_field_8h_aac8212b115bae561910e50f6727650a2}{FIELD\+\_\+\+ROWS}}\mbox{]}\mbox{[}\mbox{\hyperlink{_field_8h_a9da2481ad52b5e998640e5aff6970292}{FIELD\+\_\+\+COLS}}\mbox{]}, int player)
+\item 
+void \mbox{\hyperlink{_game_graphics_8c_ab1047fa1076eda8ecf664cad4e673aa0}{print\+\_\+player\+\_\+score}} (int score, int player)
+\item 
+void \mbox{\hyperlink{_game_graphics_8c_ae0e45fef884bc70eeec50e315dd0cda6}{print\+\_\+turn}} (int direction\+\_\+sx)
+\item 
+void \mbox{\hyperlink{_game_graphics_8c_ae618a3ecbb0d62500bfff666b12b8afc}{clear\+\_\+all}} ()
+\item 
+int \mbox{\hyperlink{_game_graphics_8c_a05822b0ec3253d70214187eee80ce6a9}{get\+\_\+input}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variabili}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \mbox{\hyperlink{_game_graphics_8c_a4bfde857a4934ed020d43661d6b0d64e}{char\+\_\+empty\+\_\+field}} = \char`\"{} \char`\"{}
+\item 
+char $\ast$ \mbox{\hyperlink{_game_graphics_8c_a6ca82551fd15c5d9d31871d4724adbd0}{char\+\_\+value\+\_\+field}} = \char`\"{}\mbox{[}\#\mbox{]}\char`\"{}
+\item 
+char $\ast$ \mbox{\hyperlink{_game_graphics_8c_a4077816a5cf77d9e234ea1bd55fbb19b}{char\+\_\+value\+\_\+invalid}} = \char`\"{}\mbox{[}X\mbox{]}\char`\"{}
+\item 
+WINDOW $\ast$ \mbox{\hyperlink{_game_graphics_8c_ae8b3df59b98fc4aecfbe16b1ad4eca71}{main\+\_\+window}}
+\item 
+WINDOW $\ast$ \mbox{\hyperlink{_game_graphics_8c_aefcb5b4a8c665c5f4029793475f845e8}{field\+\_\+window}}
+\item 
+WINDOW $\ast$ \mbox{\hyperlink{_game_graphics_8c_adc569038dd54b43b7540ad54aaaa4f2f}{score\+\_\+window}}
+\item 
+WINDOW $\ast$ \mbox{\hyperlink{_game_graphics_8c_aa64a534fb6db2326d37f984d91f52655}{tet\+\_\+window}}
+\item 
+WINDOW $\ast$ \mbox{\hyperlink{_game_graphics_8c_a3b75a41052b08653ef6f192c4c921e5f}{info\+\_\+window}}
+\item 
+WINDOW $\ast$ \mbox{\hyperlink{_game_graphics_8c_ace3b6077eb7e24380491cf2510a9ccaa}{second\+\_\+field\+\_\+window}}
+\item 
+WINDOW $\ast$ \mbox{\hyperlink{_game_graphics_8c_a2d577c765651bb73146a006ba8de3d4f}{second\+\_\+score\+\_\+window}}
+\item 
+WINDOW $\ast$ \mbox{\hyperlink{_game_graphics_8c_aa3383bd690fe217dc27473d0aeb2cbbc}{turn\+\_\+window}}
+\item 
+WINDOW $\ast$ \mbox{\hyperlink{_game_graphics_8c_ac4008305b2a71ff6bef4ed96c941bd41}{game\+\_\+over\+\_\+window}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+File di implementazione delle funzioni grafiche utilizzate per la partita. 
+
+\begin{DoxyAuthor}{Autore}
+Albert Alibeaj 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentazione delle definizioni}
+\mbox{\Hypertarget{_game_graphics_8c_a16e6f8917a46044c1506956776cc7979}\label{_game_graphics_8c_a16e6f8917a46044c1506956776cc7979}} 
+\index{GameGraphics.c@{GameGraphics.c}!COLOR\_INV@{COLOR\_INV}}
+\index{COLOR\_INV@{COLOR\_INV}!GameGraphics.c@{GameGraphics.c}}
+\doxysubsubsection{\texorpdfstring{COLOR\_INV}{COLOR\_INV}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+INV~9}
+
+identificativo del colore da usare per le righe invertite (multiplayer) \mbox{\Hypertarget{_game_graphics_8c_aef75f616b9a3fdb10d38395dfb996873}\label{_game_graphics_8c_aef75f616b9a3fdb10d38395dfb996873}} 
+\index{GameGraphics.c@{GameGraphics.c}!COLOR\_ORANGE@{COLOR\_ORANGE}}
+\index{COLOR\_ORANGE@{COLOR\_ORANGE}!GameGraphics.c@{GameGraphics.c}}
+\doxysubsubsection{\texorpdfstring{COLOR\_ORANGE}{COLOR\_ORANGE}}
+{\footnotesize\ttfamily \#define COLOR\+\_\+\+ORANGE~8}
+
+identificativo del colore arancione che è stato ridefinito 
+
+\doxysubsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{_game_graphics_8c_ae618a3ecbb0d62500bfff666b12b8afc}\label{_game_graphics_8c_ae618a3ecbb0d62500bfff666b12b8afc}} 
+\index{GameGraphics.c@{GameGraphics.c}!clear\_all@{clear\_all}}
+\index{clear\_all@{clear\_all}!GameGraphics.c@{GameGraphics.c}}
+\doxysubsubsection{\texorpdfstring{clear\_all()}{clear\_all()}}
+{\footnotesize\ttfamily void clear\+\_\+all (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Cancella tutta la grafica dalla schermata \mbox{\Hypertarget{_game_graphics_8c_adb8bec540bfee30a8ed42c235e8c6533}\label{_game_graphics_8c_adb8bec540bfee30a8ed42c235e8c6533}} 
+\index{GameGraphics.c@{GameGraphics.c}!game\_over\_graphics\_free@{game\_over\_graphics\_free}}
+\index{game\_over\_graphics\_free@{game\_over\_graphics\_free}!GameGraphics.c@{GameGraphics.c}}
+\doxysubsubsection{\texorpdfstring{game\_over\_graphics\_free()}{game\_over\_graphics\_free()}}
+{\footnotesize\ttfamily void game\+\_\+over\+\_\+graphics\+\_\+free (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Libera la memoria allocata per la grafica del game over \mbox{\Hypertarget{_game_graphics_8c_a05822b0ec3253d70214187eee80ce6a9}\label{_game_graphics_8c_a05822b0ec3253d70214187eee80ce6a9}} 
+\index{GameGraphics.c@{GameGraphics.c}!get\_input@{get\_input}}
+\index{get\_input@{get\_input}!GameGraphics.c@{GameGraphics.c}}
+\doxysubsubsection{\texorpdfstring{get\_input()}{get\_input()}}
+{\footnotesize\ttfamily int get\+\_\+input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Attende l\textquotesingle{}input da tastiera dell\textquotesingle{}utente \begin{DoxyReturn}{Restituisce}
+valore del tasto premuto 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_game_graphics_8c_a63790e021bbe6eb4ee0525657d2c8b3f}\label{_game_graphics_8c_a63790e021bbe6eb4ee0525657d2c8b3f}} 
+\index{GameGraphics.c@{GameGraphics.c}!init\_colors@{init\_colors}}
+\index{init\_colors@{init\_colors}!GameGraphics.c@{GameGraphics.c}}
+\doxysubsubsection{\texorpdfstring{init\_colors()}{init\_colors()}}
+{\footnotesize\ttfamily void init\+\_\+colors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Inizializza variabili contenenti i colori da utiilizzare nel terminale \mbox{\Hypertarget{_game_graphics_8c_aab84050db52467f88c9758ed260c54ef}\label{_game_graphics_8c_aab84050db52467f88c9758ed260c54ef}} 
+\index{GameGraphics.c@{GameGraphics.c}!multi\_graphics\_free@{multi\_graphics\_free}}
+\index{multi\_graphics\_free@{multi\_graphics\_free}!GameGraphics.c@{GameGraphics.c}}
+\doxysubsubsection{\texorpdfstring{multi\_graphics\_free()}{multi\_graphics\_free()}}
+{\footnotesize\ttfamily void multi\+\_\+graphics\+\_\+free (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Libera la memoria allocata per la grafica di una partita multiplayer \mbox{\Hypertarget{_game_graphics_8c_af83bd7d240e6871c6b4be0f887b186e8}\label{_game_graphics_8c_af83bd7d240e6871c6b4be0f887b186e8}} 
+\index{GameGraphics.c@{GameGraphics.c}!multi\_graphics\_init@{multi\_graphics\_init}}
+\index{multi\_graphics\_init@{multi\_graphics\_init}!GameGraphics.c@{GameGraphics.c}}
+\doxysubsubsection{\texorpdfstring{multi\_graphics\_init()}{multi\_graphics\_init()}}
+{\footnotesize\ttfamily void multi\+\_\+graphics\+\_\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Alloca la memoria per la grafica di una partita multiplayer \mbox{\Hypertarget{_game_graphics_8c_a7e35ac30bac3dba531abcddb832b56a9}\label{_game_graphics_8c_a7e35ac30bac3dba531abcddb832b56a9}} 
+\index{GameGraphics.c@{GameGraphics.c}!print\_field@{print\_field}}
+\index{print\_field@{print\_field}!GameGraphics.c@{GameGraphics.c}}
+\doxysubsubsection{\texorpdfstring{print\_field()}{print\_field()}}
+{\footnotesize\ttfamily void print\+\_\+field (\begin{DoxyParamCaption}\item[{int}]{field\mbox{[}\+FIELD\+\_\+\+ROWS\mbox{]}\mbox{[}\+FIELD\+\_\+\+COLS\mbox{]},  }\item[{WINDOW $\ast$}]{win }\end{DoxyParamCaption})}
+
+Stampa il campo in una finestra specifica (parte della schermata intera) 
+\begin{DoxyParams}{Parametri}
+{\em field} & campo da stampare \\
+\hline
+{\em win} & finestra su cui stampare il campo \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_game_graphics_8c_a94076ca6e85e191d5347876d03d596c6}\label{_game_graphics_8c_a94076ca6e85e191d5347876d03d596c6}} 
+\index{GameGraphics.c@{GameGraphics.c}!print\_game\_over@{print\_game\_over}}
+\index{print\_game\_over@{print\_game\_over}!GameGraphics.c@{GameGraphics.c}}
+\doxysubsubsection{\texorpdfstring{print\_game\_over()}{print\_game\_over()}}
+{\footnotesize\ttfamily void print\+\_\+game\+\_\+over (\begin{DoxyParamCaption}\item[{char $\ast$}]{info }\end{DoxyParamCaption})}
+
+Stampa la schermata di game over, con una stringa di specificazione, con a capo automatico e senza spezzare le parole 
+\begin{DoxyParams}{Parametri}
+{\em info} & stringa da stampare \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_game_graphics_8c_a05d07d13775440ac81d3a0903905032a}\label{_game_graphics_8c_a05d07d13775440ac81d3a0903905032a}} 
+\index{GameGraphics.c@{GameGraphics.c}!print\_info@{print\_info}}
+\index{print\_info@{print\_info}!GameGraphics.c@{GameGraphics.c}}
+\doxysubsubsection{\texorpdfstring{print\_info()}{print\_info()}}
+{\footnotesize\ttfamily void print\+\_\+info (\begin{DoxyParamCaption}\item[{char $\ast$}]{info }\end{DoxyParamCaption})}
+
+Stampa una stringa nel riquadro informazioni, con a capo automatico e senza spezzare le parole 
+\begin{DoxyParams}{Parametri}
+{\em info} & stringa da stampare \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_game_graphics_8c_a62247fd098369a87484c95c326d9110c}\label{_game_graphics_8c_a62247fd098369a87484c95c326d9110c}} 
+\index{GameGraphics.c@{GameGraphics.c}!print\_player\_field@{print\_player\_field}}
+\index{print\_player\_field@{print\_player\_field}!GameGraphics.c@{GameGraphics.c}}
+\doxysubsubsection{\texorpdfstring{print\_player\_field()}{print\_player\_field()}}
+{\footnotesize\ttfamily void print\+\_\+player\+\_\+field (\begin{DoxyParamCaption}\item[{int}]{field\mbox{[}\+FIELD\+\_\+\+ROWS\mbox{]}\mbox{[}\+FIELD\+\_\+\+COLS\mbox{]},  }\item[{int}]{player }\end{DoxyParamCaption})}
+
+Stampa il campo di un giocatore nel suo riquadro. Distingue i tetramini e usa colri diversi per ciascuno 
+\begin{DoxyParams}{Parametri}
+{\em field} & campo da stampare \\
+\hline
+{\em player} & giocatore per il quale stampare il campo \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_game_graphics_8c_ab1047fa1076eda8ecf664cad4e673aa0}\label{_game_graphics_8c_ab1047fa1076eda8ecf664cad4e673aa0}} 
+\index{GameGraphics.c@{GameGraphics.c}!print\_player\_score@{print\_player\_score}}
+\index{print\_player\_score@{print\_player\_score}!GameGraphics.c@{GameGraphics.c}}
+\doxysubsubsection{\texorpdfstring{print\_player\_score()}{print\_player\_score()}}
+{\footnotesize\ttfamily void print\+\_\+player\+\_\+score (\begin{DoxyParamCaption}\item[{int}]{score,  }\item[{int}]{player }\end{DoxyParamCaption})}
+
+Stampa il punteggio di un giocatore nel suo riquadro. 
+\begin{DoxyParams}{Parametri}
+{\em score} & valore da stampare \\
+\hline
+{\em player} & giocatore per il quale stampare il punteggio \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_game_graphics_8c_af79d149fe5aeff86ab4431d0aceec2ce}\label{_game_graphics_8c_af79d149fe5aeff86ab4431d0aceec2ce}} 
+\index{GameGraphics.c@{GameGraphics.c}!print\_score@{print\_score}}
+\index{print\_score@{print\_score}!GameGraphics.c@{GameGraphics.c}}
+\doxysubsubsection{\texorpdfstring{print\_score()}{print\_score()}}
+{\footnotesize\ttfamily void print\+\_\+score (\begin{DoxyParamCaption}\item[{int}]{value,  }\item[{WINDOW $\ast$}]{win }\end{DoxyParamCaption})}
+
+Stampa il punteggio in una finestra specifica (parte della schermata intera) 
+\begin{DoxyParams}{Parametri}
+{\em value} & punteggio da stampare \\
+\hline
+{\em win} & finestra su cui stampare il punteggio \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_game_graphics_8c_af2091d43d573cbae6a8543fca9c71672}\label{_game_graphics_8c_af2091d43d573cbae6a8543fca9c71672}} 
+\index{GameGraphics.c@{GameGraphics.c}!print\_tet@{print\_tet}}
+\index{print\_tet@{print\_tet}!GameGraphics.c@{GameGraphics.c}}
+\doxysubsubsection{\texorpdfstring{print\_tet()}{print\_tet()}}
+{\footnotesize\ttfamily void print\+\_\+tet (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}}}]{tet }\end{DoxyParamCaption})}
+
+Stampa a video un tetramino, nel suo riquadro e con la forma (rotazione) corrente 
+\begin{DoxyParams}{Parametri}
+{\em tet} & il tetramino da stampare \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_game_graphics_8c_a5a9ec1278beb3adfb42f672afb96190b}\label{_game_graphics_8c_a5a9ec1278beb3adfb42f672afb96190b}} 
+\index{GameGraphics.c@{GameGraphics.c}!print\_text\_helper@{print\_text\_helper}}
+\index{print\_text\_helper@{print\_text\_helper}!GameGraphics.c@{GameGraphics.c}}
+\doxysubsubsection{\texorpdfstring{print\_text\_helper()}{print\_text\_helper()}}
+{\footnotesize\ttfamily void print\+\_\+text\+\_\+helper (\begin{DoxyParamCaption}\item[{char $\ast$}]{info,  }\item[{WINDOW $\ast$}]{win,  }\item[{int}]{y\+\_\+start,  }\item[{int}]{x\+\_\+start,  }\item[{int}]{n\+\_\+rows,  }\item[{int}]{n\+\_\+cols }\end{DoxyParamCaption})}
+
+Stampa il testo in una finestra con a capo automatico e senza spezzare le parole 
+\begin{DoxyParams}{Parametri}
+{\em info} & testo da stampare \\
+\hline
+{\em win} & finestra su cui stampare la stringa \\
+\hline
+{\em y\+\_\+start} & riga della finestra da cui iniziare la stampa \\
+\hline
+{\em x\+\_\+start} & colonna della finestra da cui iniziare la stampa \\
+\hline
+{\em n\+\_\+rows} & numero di righe utilizzabili per la stampa \\
+\hline
+{\em n\+\_\+cols} & numero di colonne ultizzabili per la stampa \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_game_graphics_8c_ae0e45fef884bc70eeec50e315dd0cda6}\label{_game_graphics_8c_ae0e45fef884bc70eeec50e315dd0cda6}} 
+\index{GameGraphics.c@{GameGraphics.c}!print\_turn@{print\_turn}}
+\index{print\_turn@{print\_turn}!GameGraphics.c@{GameGraphics.c}}
+\doxysubsubsection{\texorpdfstring{print\_turn()}{print\_turn()}}
+{\footnotesize\ttfamily void print\+\_\+turn (\begin{DoxyParamCaption}\item[{int}]{direction\+\_\+sx }\end{DoxyParamCaption})}
+
+Stampa una freccia che indica di chi è il turno. 
+\begin{DoxyParams}{Parametri}
+{\em direction\+\_\+sx} & se TRUE la freccia punta a sinistra, altrimenti a destra \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_game_graphics_8c_a60e87ca23acb293f0813a9513843c3d1}\label{_game_graphics_8c_a60e87ca23acb293f0813a9513843c3d1}} 
+\index{GameGraphics.c@{GameGraphics.c}!single\_graphics\_free@{single\_graphics\_free}}
+\index{single\_graphics\_free@{single\_graphics\_free}!GameGraphics.c@{GameGraphics.c}}
+\doxysubsubsection{\texorpdfstring{single\_graphics\_free()}{single\_graphics\_free()}}
+{\footnotesize\ttfamily void single\+\_\+graphics\+\_\+free (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Libera la memoria allocata per la grafica di una partita singleplayer \mbox{\Hypertarget{_game_graphics_8c_ad1f9b0f16c22065c594046d7090462c7}\label{_game_graphics_8c_ad1f9b0f16c22065c594046d7090462c7}} 
+\index{GameGraphics.c@{GameGraphics.c}!single\_graphics\_init@{single\_graphics\_init}}
+\index{single\_graphics\_init@{single\_graphics\_init}!GameGraphics.c@{GameGraphics.c}}
+\doxysubsubsection{\texorpdfstring{single\_graphics\_init()}{single\_graphics\_init()}}
+{\footnotesize\ttfamily void single\+\_\+graphics\+\_\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Alloca la memoria per la grafica di una partita singleplayer 
+
+\doxysubsection{Documentazione delle variabili}
+\mbox{\Hypertarget{_game_graphics_8c_a4bfde857a4934ed020d43661d6b0d64e}\label{_game_graphics_8c_a4bfde857a4934ed020d43661d6b0d64e}} 
+\index{GameGraphics.c@{GameGraphics.c}!char\_empty\_field@{char\_empty\_field}}
+\index{char\_empty\_field@{char\_empty\_field}!GameGraphics.c@{GameGraphics.c}}
+\doxysubsubsection{\texorpdfstring{char\_empty\_field}{char\_empty\_field}}
+{\footnotesize\ttfamily char$\ast$ char\+\_\+empty\+\_\+field = \char`\"{} \char`\"{}}
+
+codifica cella del campo vuota \mbox{\Hypertarget{_game_graphics_8c_a6ca82551fd15c5d9d31871d4724adbd0}\label{_game_graphics_8c_a6ca82551fd15c5d9d31871d4724adbd0}} 
+\index{GameGraphics.c@{GameGraphics.c}!char\_value\_field@{char\_value\_field}}
+\index{char\_value\_field@{char\_value\_field}!GameGraphics.c@{GameGraphics.c}}
+\doxysubsubsection{\texorpdfstring{char\_value\_field}{char\_value\_field}}
+{\footnotesize\ttfamily char$\ast$ char\+\_\+value\+\_\+field = \char`\"{}\mbox{[}\#\mbox{]}\char`\"{}}
+
+codifica cella del campo piena \mbox{\Hypertarget{_game_graphics_8c_a4077816a5cf77d9e234ea1bd55fbb19b}\label{_game_graphics_8c_a4077816a5cf77d9e234ea1bd55fbb19b}} 
+\index{GameGraphics.c@{GameGraphics.c}!char\_value\_invalid@{char\_value\_invalid}}
+\index{char\_value\_invalid@{char\_value\_invalid}!GameGraphics.c@{GameGraphics.c}}
+\doxysubsubsection{\texorpdfstring{char\_value\_invalid}{char\_value\_invalid}}
+{\footnotesize\ttfamily char$\ast$ char\+\_\+value\+\_\+invalid = \char`\"{}\mbox{[}X\mbox{]}\char`\"{}}
+
+codifica cella fuori dal campo \mbox{\Hypertarget{_game_graphics_8c_aefcb5b4a8c665c5f4029793475f845e8}\label{_game_graphics_8c_aefcb5b4a8c665c5f4029793475f845e8}} 
+\index{GameGraphics.c@{GameGraphics.c}!field\_window@{field\_window}}
+\index{field\_window@{field\_window}!GameGraphics.c@{GameGraphics.c}}
+\doxysubsubsection{\texorpdfstring{field\_window}{field\_window}}
+{\footnotesize\ttfamily WINDOW$\ast$ field\+\_\+window}
+
+sottofinestra che contiene la grafica del campo 1 ~\newline
+ \mbox{\Hypertarget{_game_graphics_8c_ac4008305b2a71ff6bef4ed96c941bd41}\label{_game_graphics_8c_ac4008305b2a71ff6bef4ed96c941bd41}} 
+\index{GameGraphics.c@{GameGraphics.c}!game\_over\_window@{game\_over\_window}}
+\index{game\_over\_window@{game\_over\_window}!GameGraphics.c@{GameGraphics.c}}
+\doxysubsubsection{\texorpdfstring{game\_over\_window}{game\_over\_window}}
+{\footnotesize\ttfamily WINDOW$\ast$ game\+\_\+over\+\_\+window}
+
+finestra che contiene la grafica della schermata di game over \mbox{\Hypertarget{_game_graphics_8c_a3b75a41052b08653ef6f192c4c921e5f}\label{_game_graphics_8c_a3b75a41052b08653ef6f192c4c921e5f}} 
+\index{GameGraphics.c@{GameGraphics.c}!info\_window@{info\_window}}
+\index{info\_window@{info\_window}!GameGraphics.c@{GameGraphics.c}}
+\doxysubsubsection{\texorpdfstring{info\_window}{info\_window}}
+{\footnotesize\ttfamily WINDOW$\ast$ info\+\_\+window}
+
+sottofinestra che contiene la grafica del box informazioni \mbox{\Hypertarget{_game_graphics_8c_ae8b3df59b98fc4aecfbe16b1ad4eca71}\label{_game_graphics_8c_ae8b3df59b98fc4aecfbe16b1ad4eca71}} 
+\index{GameGraphics.c@{GameGraphics.c}!main\_window@{main\_window}}
+\index{main\_window@{main\_window}!GameGraphics.c@{GameGraphics.c}}
+\doxysubsubsection{\texorpdfstring{main\_window}{main\_window}}
+{\footnotesize\ttfamily WINDOW$\ast$ main\+\_\+window}
+
+finestra che contiene la sottofinestre per la grafica della partita \mbox{\Hypertarget{_game_graphics_8c_adc569038dd54b43b7540ad54aaaa4f2f}\label{_game_graphics_8c_adc569038dd54b43b7540ad54aaaa4f2f}} 
+\index{GameGraphics.c@{GameGraphics.c}!score\_window@{score\_window}}
+\index{score\_window@{score\_window}!GameGraphics.c@{GameGraphics.c}}
+\doxysubsubsection{\texorpdfstring{score\_window}{score\_window}}
+{\footnotesize\ttfamily WINDOW$\ast$ score\+\_\+window}
+
+sottofinestra che contiene la grafica del punteggio 1 \mbox{\Hypertarget{_game_graphics_8c_ace3b6077eb7e24380491cf2510a9ccaa}\label{_game_graphics_8c_ace3b6077eb7e24380491cf2510a9ccaa}} 
+\index{GameGraphics.c@{GameGraphics.c}!second\_field\_window@{second\_field\_window}}
+\index{second\_field\_window@{second\_field\_window}!GameGraphics.c@{GameGraphics.c}}
+\doxysubsubsection{\texorpdfstring{second\_field\_window}{second\_field\_window}}
+{\footnotesize\ttfamily WINDOW$\ast$ second\+\_\+field\+\_\+window}
+
+sottofinestra che contiene la grafica del campo 2 (multiplayer) \mbox{\Hypertarget{_game_graphics_8c_a2d577c765651bb73146a006ba8de3d4f}\label{_game_graphics_8c_a2d577c765651bb73146a006ba8de3d4f}} 
+\index{GameGraphics.c@{GameGraphics.c}!second\_score\_window@{second\_score\_window}}
+\index{second\_score\_window@{second\_score\_window}!GameGraphics.c@{GameGraphics.c}}
+\doxysubsubsection{\texorpdfstring{second\_score\_window}{second\_score\_window}}
+{\footnotesize\ttfamily WINDOW$\ast$ second\+\_\+score\+\_\+window}
+
+sottofinestra che contiene la grafica del punteggio 2 (multiplayer) \mbox{\Hypertarget{_game_graphics_8c_aa64a534fb6db2326d37f984d91f52655}\label{_game_graphics_8c_aa64a534fb6db2326d37f984d91f52655}} 
+\index{GameGraphics.c@{GameGraphics.c}!tet\_window@{tet\_window}}
+\index{tet\_window@{tet\_window}!GameGraphics.c@{GameGraphics.c}}
+\doxysubsubsection{\texorpdfstring{tet\_window}{tet\_window}}
+{\footnotesize\ttfamily WINDOW$\ast$ tet\+\_\+window}
+
+sottofinestra che contiene la grafica dei tetramini \mbox{\Hypertarget{_game_graphics_8c_aa3383bd690fe217dc27473d0aeb2cbbc}\label{_game_graphics_8c_aa3383bd690fe217dc27473d0aeb2cbbc}} 
+\index{GameGraphics.c@{GameGraphics.c}!turn\_window@{turn\_window}}
+\index{turn\_window@{turn\_window}!GameGraphics.c@{GameGraphics.c}}
+\doxysubsubsection{\texorpdfstring{turn\_window}{turn\_window}}
+{\footnotesize\ttfamily WINDOW$\ast$ turn\+\_\+window}
+
+sottofinestra che contiene la grafica della freccia che indica il turno (multiplayer) 

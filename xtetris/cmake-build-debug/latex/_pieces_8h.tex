@@ -1,0 +1,107 @@
+\hypertarget{_pieces_8h}{}\doxysection{Riferimenti per il file /\+Users/albertalibeaj/\+CLion\+Projects/xtetris/\+Pieces.h}
+\label{_pieces_8h}\index{/Users/albertalibeaj/CLionProjects/xtetris/Pieces.h@{/Users/albertalibeaj/CLionProjects/xtetris/Pieces.h}}
+
+
+Libreria che definisce la struttura dei tetramini e le funzioni per la loro gestione.  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+\doxysubsection*{Strutture dati}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_tetramino}{Tetramino}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Definizioni}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_pieces_8h_a7f3349f3a62351432d96c4d57bcac6e9}{DEFAULT\+\_\+\+TET\+\_\+\+QUANTITY}}~20
+\item 
+\#define \mbox{\hyperlink{_pieces_8h_a0285e99e1babc9994ba2048d86ab775b}{TET\+\_\+\+TYPES}}~7
+\end{DoxyCompactItemize}
+\doxysubsection*{Ridefinizioni di tipo (typedef)}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct_tetramino}{Tetramino}} \mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_pieces_8h_a4d6f0658c7c0c390703a788e99209613}{tets\+\_\+init}} (\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} tets\mbox{[}\mbox{\hyperlink{_pieces_8h_a0285e99e1babc9994ba2048d86ab775b}{TET\+\_\+\+TYPES}}\mbox{]}, int multiplayer)
+\item 
+void \mbox{\hyperlink{_pieces_8h_a9a9a6931aa9599df85efb500038686b3}{tets\+\_\+free}} (\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} tets\mbox{[}\mbox{\hyperlink{_pieces_8h_a0285e99e1babc9994ba2048d86ab775b}{TET\+\_\+\+TYPES}}\mbox{]})
+\item 
+int \mbox{\hyperlink{_pieces_8h_a3a0019a8791448f5d2185dcb1b7d69d0}{tet\+\_\+width}} (\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} tet)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+Libreria che definisce la struttura dei tetramini e le funzioni per la loro gestione. 
+
+\begin{DoxyAuthor}{Autore}
+Albert Alibeaj 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentazione delle definizioni}
+\mbox{\Hypertarget{_pieces_8h_a7f3349f3a62351432d96c4d57bcac6e9}\label{_pieces_8h_a7f3349f3a62351432d96c4d57bcac6e9}} 
+\index{Pieces.h@{Pieces.h}!DEFAULT\_TET\_QUANTITY@{DEFAULT\_TET\_QUANTITY}}
+\index{DEFAULT\_TET\_QUANTITY@{DEFAULT\_TET\_QUANTITY}!Pieces.h@{Pieces.h}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_TET\_QUANTITY}{DEFAULT\_TET\_QUANTITY}}
+{\footnotesize\ttfamily \#define DEFAULT\+\_\+\+TET\+\_\+\+QUANTITY~20}
+
+quantità iniziale per ogni tetramino (singleplayer) \mbox{\Hypertarget{_pieces_8h_a0285e99e1babc9994ba2048d86ab775b}\label{_pieces_8h_a0285e99e1babc9994ba2048d86ab775b}} 
+\index{Pieces.h@{Pieces.h}!TET\_TYPES@{TET\_TYPES}}
+\index{TET\_TYPES@{TET\_TYPES}!Pieces.h@{Pieces.h}}
+\doxysubsubsection{\texorpdfstring{TET\_TYPES}{TET\_TYPES}}
+{\footnotesize\ttfamily \#define TET\+\_\+\+TYPES~7}
+
+tipi di tetramino distiniti 
+
+\doxysubsection{Documentazione delle ridefinizioni di tipo (typedef)}
+\mbox{\Hypertarget{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}\label{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}} 
+\index{Pieces.h@{Pieces.h}!tet\_t@{tet\_t}}
+\index{tet\_t@{tet\_t}!Pieces.h@{Pieces.h}}
+\doxysubsubsection{\texorpdfstring{tet\_t}{tet\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_tetramino}{Tetramino}} \mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}}}
+
+Tipo tet\+\_\+t Struttura di un tetramino 
+
+\doxysubsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{_pieces_8h_a3a0019a8791448f5d2185dcb1b7d69d0}\label{_pieces_8h_a3a0019a8791448f5d2185dcb1b7d69d0}} 
+\index{Pieces.h@{Pieces.h}!tet\_width@{tet\_width}}
+\index{tet\_width@{tet\_width}!Pieces.h@{Pieces.h}}
+\doxysubsubsection{\texorpdfstring{tet\_width()}{tet\_width()}}
+{\footnotesize\ttfamily int tet\+\_\+width (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}}}]{tet }\end{DoxyParamCaption})}
+
+Calcola lo spazio occupato in larghezza da un tetramino 
+\begin{DoxyParams}{Parametri}
+{\em tet} & tetramino di cui calcolare la larghezza \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+larghezza effettiva nella forma corrente 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_pieces_8h_a9a9a6931aa9599df85efb500038686b3}\label{_pieces_8h_a9a9a6931aa9599df85efb500038686b3}} 
+\index{Pieces.h@{Pieces.h}!tets\_free@{tets\_free}}
+\index{tets\_free@{tets\_free}!Pieces.h@{Pieces.h}}
+\doxysubsubsection{\texorpdfstring{tets\_free()}{tets\_free()}}
+{\footnotesize\ttfamily void tets\+\_\+free (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}}}]{tets\mbox{[}\+TET\+\_\+\+TYPES\mbox{]} }\end{DoxyParamCaption})}
+
+Libera la memoria allocata dai tetramini 
+\begin{DoxyParams}{Parametri}
+{\em tets} & array di tetramini da deallocare \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_pieces_8h_a4d6f0658c7c0c390703a788e99209613}\label{_pieces_8h_a4d6f0658c7c0c390703a788e99209613}} 
+\index{Pieces.h@{Pieces.h}!tets\_init@{tets\_init}}
+\index{tets\_init@{tets\_init}!Pieces.h@{Pieces.h}}
+\doxysubsubsection{\texorpdfstring{tets\_init()}{tets\_init()}}
+{\footnotesize\ttfamily void tets\+\_\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}}}]{tets\mbox{[}\+TET\+\_\+\+TYPES\mbox{]},  }\item[{int}]{multiplayer }\end{DoxyParamCaption})}
+
+Inizializza i tetramini. Alloca gli array e imposta i valori iniziali 
+\begin{DoxyParams}{Parametri}
+{\em tets} & array di tetramini da riempire al termine della funzione \\
+\hline
+{\em multiplayer} & se TRUE le quantità sono raddoppiate \\
+\hline
+\end{DoxyParams}

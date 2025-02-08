@@ -1,0 +1,190 @@
+\hypertarget{_moves_8c}{}\doxysection{Riferimenti per il file /\+Users/albertalibeaj/\+CLion\+Projects/xtetris/\+Moves.c}
+\label{_moves_8c}\index{/Users/albertalibeaj/CLionProjects/xtetris/Moves.c@{/Users/albertalibeaj/CLionProjects/xtetris/Moves.c}}
+
+
+File di implementazione delle funzioni di gestione di campo e tetramini utilizzate per la partita.  
+
+
+{\ttfamily \#include \char`\"{}Moves.\+h\char`\"{}}\newline
+\doxysubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_moves_8c_a89f7c0a64f6e3ea8854212d2e7fafb33}{tet\+\_\+adjust}} (\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} $\ast$tet)
+\item 
+void \mbox{\hyperlink{_moves_8c_a0e0258855c153cf7ce0e70760b3eb3bc}{insert\+\_\+at\+\_\+pos}} (int field\mbox{[}\mbox{\hyperlink{_field_8h_aac8212b115bae561910e50f6727650a2}{FIELD\+\_\+\+ROWS}}\mbox{]}\mbox{[}\mbox{\hyperlink{_field_8h_a9da2481ad52b5e998640e5aff6970292}{FIELD\+\_\+\+COLS}}\mbox{]}, \mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} tet, int row, int col)
+\item 
+int \mbox{\hyperlink{_moves_8c_a21bce7a80898ec8802f0cda97af7c16a}{getscore}} (int field\mbox{[}\mbox{\hyperlink{_field_8h_aac8212b115bae561910e50f6727650a2}{FIELD\+\_\+\+ROWS}}\mbox{]}\mbox{[}\mbox{\hyperlink{_field_8h_a9da2481ad52b5e998640e5aff6970292}{FIELD\+\_\+\+COLS}}\mbox{]}, int row, int len)
+\item 
+int \mbox{\hyperlink{_moves_8c_a318196524923278d336c7e9615b0f956}{is\+\_\+empty\+\_\+row}} (int field\mbox{[}\mbox{\hyperlink{_field_8h_aac8212b115bae561910e50f6727650a2}{FIELD\+\_\+\+ROWS}}\mbox{]}\mbox{[}\mbox{\hyperlink{_field_8h_a9da2481ad52b5e998640e5aff6970292}{FIELD\+\_\+\+COLS}}\mbox{]}, int row)
+\item 
+int \mbox{\hyperlink{_moves_8c_aaff304bd4dfdb553a3b1d820f2bea980}{tet\+\_\+last\+\_\+solid}} (\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} tet, int col)
+\item 
+int \mbox{\hyperlink{_moves_8c_ac9d9fd3abf8798e163332a5418c78b50}{insert}} (int field\mbox{[}\mbox{\hyperlink{_field_8h_aac8212b115bae561910e50f6727650a2}{FIELD\+\_\+\+ROWS}}\mbox{]}\mbox{[}\mbox{\hyperlink{_field_8h_a9da2481ad52b5e998640e5aff6970292}{FIELD\+\_\+\+COLS}}\mbox{]}, \mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} $\ast$tet, int column, int rotation)
+\item 
+void \mbox{\hyperlink{_moves_8c_a37e793594b90db6c52f184075e762a0e}{rotate\+\_\+dx}} (\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} $\ast$tet, int n)
+\item 
+void \mbox{\hyperlink{_moves_8c_a43cecd163ab3ae5c1b68ea55ba3eb996}{rotate\+\_\+sx}} (\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} $\ast$tet, int n)
+\item 
+void \mbox{\hyperlink{_moves_8c_a8f8bb8603fee776a1954709adfc565ce}{deleterow}} (int field\mbox{[}\mbox{\hyperlink{_field_8h_aac8212b115bae561910e50f6727650a2}{FIELD\+\_\+\+ROWS}}\mbox{]}\mbox{[}\mbox{\hyperlink{_field_8h_a9da2481ad52b5e998640e5aff6970292}{FIELD\+\_\+\+COLS}}\mbox{]}, int row)
+\item 
+void \mbox{\hyperlink{_moves_8c_aaa0ac8b9e781086a1a50399434296cf0}{reset\+\_\+shape}} (\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} $\ast$tet)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+File di implementazione delle funzioni di gestione di campo e tetramini utilizzate per la partita. 
+
+\begin{DoxyAuthor}{Autore}
+Albert Alibeaj 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{_moves_8c_a8f8bb8603fee776a1954709adfc565ce}\label{_moves_8c_a8f8bb8603fee776a1954709adfc565ce}} 
+\index{Moves.c@{Moves.c}!deleterow@{deleterow}}
+\index{deleterow@{deleterow}!Moves.c@{Moves.c}}
+\doxysubsubsection{\texorpdfstring{deleterow()}{deleterow()}}
+{\footnotesize\ttfamily void deleterow (\begin{DoxyParamCaption}\item[{int}]{field\mbox{[}\+FIELD\+\_\+\+ROWS\mbox{]}\mbox{[}\+FIELD\+\_\+\+COLS\mbox{]},  }\item[{int}]{row }\end{DoxyParamCaption})}
+
+Elimina una riga dal campo e fa cadere le righe superiori 
+\begin{DoxyParams}{Parametri}
+{\em field} & campo modificare \\
+\hline
+{\em row} & riga da eliminare \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_moves_8c_a21bce7a80898ec8802f0cda97af7c16a}\label{_moves_8c_a21bce7a80898ec8802f0cda97af7c16a}} 
+\index{Moves.c@{Moves.c}!getscore@{getscore}}
+\index{getscore@{getscore}!Moves.c@{Moves.c}}
+\doxysubsubsection{\texorpdfstring{getscore()}{getscore()}}
+{\footnotesize\ttfamily int getscore (\begin{DoxyParamCaption}\item[{int}]{field\mbox{[}\+FIELD\+\_\+\+ROWS\mbox{]}\mbox{[}\+FIELD\+\_\+\+COLS\mbox{]},  }\item[{int}]{row,  }\item[{int}]{len }\end{DoxyParamCaption})}
+
+Controlla le righe del campo modificate e se necessario le elimina 
+\begin{DoxyParams}{Parametri}
+{\em field} & campo da controllare e modificare \\
+\hline
+{\em row} & riga da cui iniziare il controllo \\
+\hline
+{\em len} & numero di righe a scendere da controllare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+punteggio ottenuto dopo l\textquotesingle{}eliminazione delle righe 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_moves_8c_ac9d9fd3abf8798e163332a5418c78b50}\label{_moves_8c_ac9d9fd3abf8798e163332a5418c78b50}} 
+\index{Moves.c@{Moves.c}!insert@{insert}}
+\index{insert@{insert}!Moves.c@{Moves.c}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily int insert (\begin{DoxyParamCaption}\item[{int}]{field\mbox{[}\+FIELD\+\_\+\+ROWS\mbox{]}\mbox{[}\+FIELD\+\_\+\+COLS\mbox{]},  }\item[{\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} $\ast$}]{tet,  }\item[{int}]{column,  }\item[{int}]{rotation }\end{DoxyParamCaption})}
+
+Inserisce un tetramino all\textquotesingle{}interno del campo di gioco 
+\begin{DoxyParams}{Parametri}
+{\em field} & array di interi in cui inserire il tetramino \\
+\hline
+{\em tet} & il tetramino da inserire \\
+\hline
+{\em column} & colonna in cui inserire il tetramino \\
+\hline
+{\em rotation} & numero di rotazioni verso destra a partire dalla forma base \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+punti guadagnati dall\textquotesingle{}inserimento 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_moves_8c_a0e0258855c153cf7ce0e70760b3eb3bc}\label{_moves_8c_a0e0258855c153cf7ce0e70760b3eb3bc}} 
+\index{Moves.c@{Moves.c}!insert\_at\_pos@{insert\_at\_pos}}
+\index{insert\_at\_pos@{insert\_at\_pos}!Moves.c@{Moves.c}}
+\doxysubsubsection{\texorpdfstring{insert\_at\_pos()}{insert\_at\_pos()}}
+{\footnotesize\ttfamily void insert\+\_\+at\+\_\+pos (\begin{DoxyParamCaption}\item[{int}]{field\mbox{[}\+FIELD\+\_\+\+ROWS\mbox{]}\mbox{[}\+FIELD\+\_\+\+COLS\mbox{]},  }\item[{\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}}}]{tet,  }\item[{int}]{row,  }\item[{int}]{col }\end{DoxyParamCaption})}
+
+Inserisce un tetramino nel campo in una certa riga e colonna precisa, senza calcolo della caduta 
+\begin{DoxyParams}{Parametri}
+{\em field} & campo su cui inserire il tetramino \\
+\hline
+{\em tet} & tetramino da inserire (controlla la forma) \\
+\hline
+{\em row} & riga del campo in cui inserire il tetramino \\
+\hline
+{\em col} & colonna del campo in cui inserire il tetramino \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_moves_8c_a318196524923278d336c7e9615b0f956}\label{_moves_8c_a318196524923278d336c7e9615b0f956}} 
+\index{Moves.c@{Moves.c}!is\_empty\_row@{is\_empty\_row}}
+\index{is\_empty\_row@{is\_empty\_row}!Moves.c@{Moves.c}}
+\doxysubsubsection{\texorpdfstring{is\_empty\_row()}{is\_empty\_row()}}
+{\footnotesize\ttfamily int is\+\_\+empty\+\_\+row (\begin{DoxyParamCaption}\item[{int}]{field\mbox{[}\+FIELD\+\_\+\+ROWS\mbox{]}\mbox{[}\+FIELD\+\_\+\+COLS\mbox{]},  }\item[{int}]{row }\end{DoxyParamCaption})}
+
+Controlla se una riga del campo è vuota 
+\begin{DoxyParams}{Parametri}
+{\em field} & campo da controllare \\
+\hline
+{\em row} & riga da controllare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+1 se la riga è vuota, 0 altrimenti 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_moves_8c_aaa0ac8b9e781086a1a50399434296cf0}\label{_moves_8c_aaa0ac8b9e781086a1a50399434296cf0}} 
+\index{Moves.c@{Moves.c}!reset\_shape@{reset\_shape}}
+\index{reset\_shape@{reset\_shape}!Moves.c@{Moves.c}}
+\doxysubsubsection{\texorpdfstring{reset\_shape()}{reset\_shape()}}
+{\footnotesize\ttfamily void reset\+\_\+shape (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} $\ast$}]{tet }\end{DoxyParamCaption})}
+
+Riporta la forma corrente di un tetramino alla forma base ruotandolo 
+\begin{DoxyParams}{Parametri}
+{\em tet} & array di cui ripristinare la forma iniziale \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_moves_8c_a37e793594b90db6c52f184075e762a0e}\label{_moves_8c_a37e793594b90db6c52f184075e762a0e}} 
+\index{Moves.c@{Moves.c}!rotate\_dx@{rotate\_dx}}
+\index{rotate\_dx@{rotate\_dx}!Moves.c@{Moves.c}}
+\doxysubsubsection{\texorpdfstring{rotate\_dx()}{rotate\_dx()}}
+{\footnotesize\ttfamily void rotate\+\_\+dx (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} $\ast$}]{tet,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+Ruota un tetramino a destra (90°) a partire dalla forma corrente 
+\begin{DoxyParams}{Parametri}
+{\em tet} & tetramino di cui ruotare il campo shape \\
+\hline
+{\em n} & numero di rotazioni a destra \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_moves_8c_a43cecd163ab3ae5c1b68ea55ba3eb996}\label{_moves_8c_a43cecd163ab3ae5c1b68ea55ba3eb996}} 
+\index{Moves.c@{Moves.c}!rotate\_sx@{rotate\_sx}}
+\index{rotate\_sx@{rotate\_sx}!Moves.c@{Moves.c}}
+\doxysubsubsection{\texorpdfstring{rotate\_sx()}{rotate\_sx()}}
+{\footnotesize\ttfamily void rotate\+\_\+sx (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} $\ast$}]{tet,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+Ruota un tetramino a sinistra (90°) a partire dalla forma corrente 
+\begin{DoxyParams}{Parametri}
+{\em tet} & tetramino di cui ruotare il campo shape \\
+\hline
+{\em n} & numero di rotazioni a sinistra \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_moves_8c_a89f7c0a64f6e3ea8854212d2e7fafb33}\label{_moves_8c_a89f7c0a64f6e3ea8854212d2e7fafb33}} 
+\index{Moves.c@{Moves.c}!tet\_adjust@{tet\_adjust}}
+\index{tet\_adjust@{tet\_adjust}!Moves.c@{Moves.c}}
+\doxysubsubsection{\texorpdfstring{tet\_adjust()}{tet\_adjust()}}
+{\footnotesize\ttfamily void tet\+\_\+adjust (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} $\ast$}]{tet }\end{DoxyParamCaption})}
+
+Sposta il tetramino in basso e a sinistra (toglie le prime colonne e le ultime righe vuote) 
+\begin{DoxyParams}{Parametri}
+{\em tet} & tetramino di cui correggere la forma dopo una rotazione \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_moves_8c_aaff304bd4dfdb553a3b1d820f2bea980}\label{_moves_8c_aaff304bd4dfdb553a3b1d820f2bea980}} 
+\index{Moves.c@{Moves.c}!tet\_last\_solid@{tet\_last\_solid}}
+\index{tet\_last\_solid@{tet\_last\_solid}!Moves.c@{Moves.c}}
+\doxysubsubsection{\texorpdfstring{tet\_last\_solid()}{tet\_last\_solid()}}
+{\footnotesize\ttfamily int tet\+\_\+last\+\_\+solid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}}}]{tet,  }\item[{int}]{col }\end{DoxyParamCaption})}
+
+Ultimo punto solido della forma del tetramino in una certa colonna 
+\begin{DoxyParams}{Parametri}
+{\em tet} & tetramino di cui controllare la forma \\
+\hline
+{\em col} & colonna da controllare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+prima riga della forma a partire dal basso che contiene il tetramino nella colonna scelta (-\/1 se colonna vuota) 
+\end{DoxyReturn}

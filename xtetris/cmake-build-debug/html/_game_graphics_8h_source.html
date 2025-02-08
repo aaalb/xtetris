@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>X-Tetris docs:  File sorgente /Users/albertalibeaj/CLionProjects/xtetris/GameGraphics.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">X-Tetris docs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Cerca','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">/Users/albertalibeaj/CLionProjects/xtetris/GameGraphics.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_game_graphics_8h.html">Vai alla documentazione di questo file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#ifndef XTETRIS2_GRAPHICS_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define XTETRIS2_GRAPHICS_H</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="_field_8h.html">Field.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="_pieces_8h.html">Pieces.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="_game_graphics_8h.html#a203163bc0189184a1de6ca8d1e53c6bf">   14</a></span><span class="preprocessor">#define KEY_DOWN (258)      </span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="_game_graphics_8h.html#afa086fc916a81e7fd348ec00cf786916">   15</a></span><span class="preprocessor">#define KEY_UP (259)        </span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="_game_graphics_8h.html#af4d1b8a2912354646c74cf36c69f8223">   16</a></span><span class="preprocessor">#define KEY_LEFT (260)      </span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="_game_graphics_8h.html#a004194639b9ad76cea01d9e93716d4d6">   17</a></span><span class="preprocessor">#define KEY_RIGHT (261)     </span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="_game_graphics_8h.html#abaee5edb96e542206ae6c8102ac228af">   18</a></span><span class="preprocessor">#define KEY_ENTER (10)      </span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="_game_graphics_8h.html#a1e9a449dee19c686a2af4edcdc1a1042">   19</a></span><span class="preprocessor">#define KEY_BACKSPACE (127) </span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keywordtype">void</span> <a class="code hl_function" href="_game_graphics_8h.html#ad1f9b0f16c22065c594046d7090462c7">single_graphics_init</a>();</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keywordtype">void</span> <a class="code hl_function" href="_game_graphics_8h.html#af83bd7d240e6871c6b4be0f887b186e8">multi_graphics_init</a>();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keywordtype">void</span> <a class="code hl_function" href="_game_graphics_8h.html#af2091d43d573cbae6a8543fca9c71672">print_tet</a>(<a class="code hl_struct" href="struct_tetramino.html">tet_t</a> tet);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keywordtype">void</span> <a class="code hl_function" href="_game_graphics_8h.html#a05d07d13775440ac81d3a0903905032a">print_info</a>(<span class="keywordtype">char</span>* info);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keywordtype">void</span> <a class="code hl_function" href="_game_graphics_8h.html#a62247fd098369a87484c95c326d9110c">print_player_field</a>(<span class="keywordtype">int</span> field[<a class="code hl_define" href="_field_8h.html#aac8212b115bae561910e50f6727650a2">FIELD_ROWS</a>][<a class="code hl_define" href="_field_8h.html#a9da2481ad52b5e998640e5aff6970292">FIELD_COLS</a>], <span class="keywordtype">int</span> player);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keywordtype">void</span> <a class="code hl_function" href="_game_graphics_8h.html#ab1047fa1076eda8ecf664cad4e673aa0">print_player_score</a>(<span class="keywordtype">int</span> score, <span class="keywordtype">int</span> player);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keywordtype">void</span> <a class="code hl_function" href="_game_graphics_8h.html#ae0e45fef884bc70eeec50e315dd0cda6">print_turn</a>(<span class="keywordtype">int</span> direction_sx);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="keywordtype">void</span> <a class="code hl_function" href="_game_graphics_8h.html#a94076ca6e85e191d5347876d03d596c6">print_game_over</a>(<span class="keywordtype">char</span>* info);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="keywordtype">void</span> <a class="code hl_function" href="_game_graphics_8h.html#a60e87ca23acb293f0813a9513843c3d1">single_graphics_free</a>();</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="keywordtype">void</span> <a class="code hl_function" href="_game_graphics_8h.html#aab84050db52467f88c9758ed260c54ef">multi_graphics_free</a>();</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="keywordtype">void</span> <a class="code hl_function" href="_game_graphics_8h.html#adb8bec540bfee30a8ed42c235e8c6533">game_over_graphics_free</a>();</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="keywordtype">void</span> <a class="code hl_function" href="_game_graphics_8h.html#ae618a3ecbb0d62500bfff666b12b8afc">clear_all</a>();</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="keywordtype">int</span> <a class="code hl_function" href="_game_graphics_8h.html#a05822b0ec3253d70214187eee80ce6a9">get_input</a>();</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="preprocessor">#endif </span><span class="comment">/*XTETRIS2_GRAPHICS_H*/</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a_field_8h_html"><div class="ttname"><a href="_field_8h.html">Field.h</a></div><div class="ttdoc">Libreria che definisce le dimensioni del campo e lo inizializza vuoto.</div></div>
+<div class="ttc" id="a_field_8h_html_a9da2481ad52b5e998640e5aff6970292"><div class="ttname"><a href="_field_8h.html#a9da2481ad52b5e998640e5aff6970292">FIELD_COLS</a></div><div class="ttdeci">#define FIELD_COLS</div><div class="ttdef"><b>Definition:</b> Field.h:18</div></div>
+<div class="ttc" id="a_field_8h_html_aac8212b115bae561910e50f6727650a2"><div class="ttname"><a href="_field_8h.html#aac8212b115bae561910e50f6727650a2">FIELD_ROWS</a></div><div class="ttdeci">#define FIELD_ROWS</div><div class="ttdef"><b>Definition:</b> Field.h:16</div></div>
+<div class="ttc" id="a_game_graphics_8h_html_a05822b0ec3253d70214187eee80ce6a9"><div class="ttname"><a href="_game_graphics_8h.html#a05822b0ec3253d70214187eee80ce6a9">get_input</a></div><div class="ttdeci">int get_input()</div><div class="ttdef"><b>Definition:</b> GameGraphics.c:410</div></div>
+<div class="ttc" id="a_game_graphics_8h_html_a05d07d13775440ac81d3a0903905032a"><div class="ttname"><a href="_game_graphics_8h.html#a05d07d13775440ac81d3a0903905032a">print_info</a></div><div class="ttdeci">void print_info(char *info)</div><div class="ttdef"><b>Definition:</b> GameGraphics.c:294</div></div>
+<div class="ttc" id="a_game_graphics_8h_html_a60e87ca23acb293f0813a9513843c3d1"><div class="ttname"><a href="_game_graphics_8h.html#a60e87ca23acb293f0813a9513843c3d1">single_graphics_free</a></div><div class="ttdeci">void single_graphics_free()</div><div class="ttdef"><b>Definition:</b> GameGraphics.c:338</div></div>
+<div class="ttc" id="a_game_graphics_8h_html_a62247fd098369a87484c95c326d9110c"><div class="ttname"><a href="_game_graphics_8h.html#a62247fd098369a87484c95c326d9110c">print_player_field</a></div><div class="ttdeci">void print_player_field(int field[FIELD_ROWS][FIELD_COLS], int player)</div><div class="ttdef"><b>Definition:</b> GameGraphics.c:367</div></div>
+<div class="ttc" id="a_game_graphics_8h_html_a94076ca6e85e191d5347876d03d596c6"><div class="ttname"><a href="_game_graphics_8h.html#a94076ca6e85e191d5347876d03d596c6">print_game_over</a></div><div class="ttdeci">void print_game_over(char *info)</div><div class="ttdef"><b>Definition:</b> GameGraphics.c:315</div></div>
+<div class="ttc" id="a_game_graphics_8h_html_aab84050db52467f88c9758ed260c54ef"><div class="ttname"><a href="_game_graphics_8h.html#aab84050db52467f88c9758ed260c54ef">multi_graphics_free</a></div><div class="ttdeci">void multi_graphics_free()</div><div class="ttdef"><b>Definition:</b> GameGraphics.c:347</div></div>
+<div class="ttc" id="a_game_graphics_8h_html_ab1047fa1076eda8ecf664cad4e673aa0"><div class="ttname"><a href="_game_graphics_8h.html#ab1047fa1076eda8ecf664cad4e673aa0">print_player_score</a></div><div class="ttdeci">void print_player_score(int score, int player)</div><div class="ttdef"><b>Definition:</b> GameGraphics.c:374</div></div>
+<div class="ttc" id="a_game_graphics_8h_html_ad1f9b0f16c22065c594046d7090462c7"><div class="ttname"><a href="_game_graphics_8h.html#ad1f9b0f16c22065c594046d7090462c7">single_graphics_init</a></div><div class="ttdeci">void single_graphics_init()</div><div class="ttdef"><b>Definition:</b> GameGraphics.c:64</div></div>
+<div class="ttc" id="a_game_graphics_8h_html_adb8bec540bfee30a8ed42c235e8c6533"><div class="ttname"><a href="_game_graphics_8h.html#adb8bec540bfee30a8ed42c235e8c6533">game_over_graphics_free</a></div><div class="ttdeci">void game_over_graphics_free()</div><div class="ttdef"><b>Definition:</b> GameGraphics.c:360</div></div>
+<div class="ttc" id="a_game_graphics_8h_html_ae0e45fef884bc70eeec50e315dd0cda6"><div class="ttname"><a href="_game_graphics_8h.html#ae0e45fef884bc70eeec50e315dd0cda6">print_turn</a></div><div class="ttdeci">void print_turn(int direction_sx)</div><div class="ttdef"><b>Definition:</b> GameGraphics.c:382</div></div>
+<div class="ttc" id="a_game_graphics_8h_html_ae618a3ecbb0d62500bfff666b12b8afc"><div class="ttname"><a href="_game_graphics_8h.html#ae618a3ecbb0d62500bfff666b12b8afc">clear_all</a></div><div class="ttdeci">void clear_all()</div><div class="ttdef"><b>Definition:</b> GameGraphics.c:406</div></div>
+<div class="ttc" id="a_game_graphics_8h_html_af2091d43d573cbae6a8543fca9c71672"><div class="ttname"><a href="_game_graphics_8h.html#af2091d43d573cbae6a8543fca9c71672">print_tet</a></div><div class="ttdeci">void print_tet(tet_t tet)</div><div class="ttdef"><b>Definition:</b> GameGraphics.c:246</div></div>
+<div class="ttc" id="a_game_graphics_8h_html_af83bd7d240e6871c6b4be0f887b186e8"><div class="ttname"><a href="_game_graphics_8h.html#af83bd7d240e6871c6b4be0f887b186e8">multi_graphics_init</a></div><div class="ttdeci">void multi_graphics_init()</div><div class="ttdef"><b>Definition:</b> GameGraphics.c:96</div></div>
+<div class="ttc" id="a_pieces_8h_html"><div class="ttname"><a href="_pieces_8h.html">Pieces.h</a></div><div class="ttdoc">Libreria che definisce la struttura dei tetramini e le funzioni per la loro gestione.</div></div>
+<div class="ttc" id="astruct_tetramino_html"><div class="ttname"><a href="struct_tetramino.html">Tetramino</a></div><div class="ttdef"><b>Definition:</b> Pieces.h:20</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generato da&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

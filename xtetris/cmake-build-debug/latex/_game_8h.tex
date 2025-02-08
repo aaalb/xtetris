@@ -1,0 +1,82 @@
+\hypertarget{_game_8h}{}\doxysection{Riferimenti per il file /\+Users/albertalibeaj/\+CLion\+Projects/xtetris/\+Game.h}
+\label{_game_8h}\index{/Users/albertalibeaj/CLionProjects/xtetris/Game.h@{/Users/albertalibeaj/CLionProjects/xtetris/Game.h}}
+
+
+Libreria per iniziare e terminare una parita, sia singleplayer che multiplayer.  
+
+
+{\ttfamily \#include \char`\"{}Moves.\+h\char`\"{}}\newline
+\doxysubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_game_8h_ae544ad2f5e5af7ac6a54ce7eb4254222}{single\+\_\+start\+\_\+game}} (int field\mbox{[}\mbox{\hyperlink{_field_8h_aac8212b115bae561910e50f6727650a2}{FIELD\+\_\+\+ROWS}}\mbox{]}\mbox{[}\mbox{\hyperlink{_field_8h_a9da2481ad52b5e998640e5aff6970292}{FIELD\+\_\+\+COLS}}\mbox{]}, \mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} tets\mbox{[}\mbox{\hyperlink{_pieces_8h_a0285e99e1babc9994ba2048d86ab775b}{TET\+\_\+\+TYPES}}\mbox{]})
+\item 
+void \mbox{\hyperlink{_game_8h_a0daa83b44aae29f3cb852a9f69b204ab}{single\+\_\+end\+\_\+game}} (\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} tets\mbox{[}\mbox{\hyperlink{_pieces_8h_a0285e99e1babc9994ba2048d86ab775b}{TET\+\_\+\+TYPES}}\mbox{]})
+\item 
+void \mbox{\hyperlink{_game_8h_a5e562809124be1f220bb481110032a17}{multi\+\_\+start\+\_\+game}} (int f1\mbox{[}\mbox{\hyperlink{_field_8h_aac8212b115bae561910e50f6727650a2}{FIELD\+\_\+\+ROWS}}\mbox{]}\mbox{[}\mbox{\hyperlink{_field_8h_a9da2481ad52b5e998640e5aff6970292}{FIELD\+\_\+\+COLS}}\mbox{]}, int f2\mbox{[}\mbox{\hyperlink{_field_8h_aac8212b115bae561910e50f6727650a2}{FIELD\+\_\+\+ROWS}}\mbox{]}\mbox{[}\mbox{\hyperlink{_field_8h_a9da2481ad52b5e998640e5aff6970292}{FIELD\+\_\+\+COLS}}\mbox{]}, \mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} tets\mbox{[}\mbox{\hyperlink{_pieces_8h_a0285e99e1babc9994ba2048d86ab775b}{TET\+\_\+\+TYPES}}\mbox{]}, int com)
+\item 
+void \mbox{\hyperlink{_game_8h_a6c2f059464ae08b15859231810cd4399}{multi\+\_\+end\+\_\+game}} (\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} tets\mbox{[}\mbox{\hyperlink{_pieces_8h_a0285e99e1babc9994ba2048d86ab775b}{TET\+\_\+\+TYPES}}\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+Libreria per iniziare e terminare una parita, sia singleplayer che multiplayer. 
+
+\begin{DoxyAuthor}{Autore}
+Albert Alibeaj 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{_game_8h_a6c2f059464ae08b15859231810cd4399}\label{_game_8h_a6c2f059464ae08b15859231810cd4399}} 
+\index{Game.h@{Game.h}!multi\_end\_game@{multi\_end\_game}}
+\index{multi\_end\_game@{multi\_end\_game}!Game.h@{Game.h}}
+\doxysubsubsection{\texorpdfstring{multi\_end\_game()}{multi\_end\_game()}}
+{\footnotesize\ttfamily void multi\+\_\+end\+\_\+game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}}}]{tets\mbox{[}\+TET\+\_\+\+TYPES\mbox{]} }\end{DoxyParamCaption})}
+
+Libera le risorse occupate durante la partita multiplayer e attende un input da tastiera prima di proseguire 
+\begin{DoxyParams}{Parametri}
+{\em tets} & array dei tetramini da deallocare \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_game_8h_a5e562809124be1f220bb481110032a17}\label{_game_8h_a5e562809124be1f220bb481110032a17}} 
+\index{Game.h@{Game.h}!multi\_start\_game@{multi\_start\_game}}
+\index{multi\_start\_game@{multi\_start\_game}!Game.h@{Game.h}}
+\doxysubsubsection{\texorpdfstring{multi\_start\_game()}{multi\_start\_game()}}
+{\footnotesize\ttfamily void multi\+\_\+start\+\_\+game (\begin{DoxyParamCaption}\item[{int}]{f1\mbox{[}\+FIELD\+\_\+\+ROWS\mbox{]}\mbox{[}\+FIELD\+\_\+\+COLS\mbox{]},  }\item[{int}]{f2\mbox{[}\+FIELD\+\_\+\+ROWS\mbox{]}\mbox{[}\+FIELD\+\_\+\+COLS\mbox{]},  }\item[{\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}}}]{tets\mbox{[}\+TET\+\_\+\+TYPES\mbox{]},  }\item[{int}]{com }\end{DoxyParamCaption})}
+
+Prepara e inizia una partita multiplayer e la prosegue finchè non termina 
+\begin{DoxyParams}{Parametri}
+{\em f1} & array che si vuole usare come campo del giocatore 1 \\
+\hline
+{\em f2} & array che si vuole usare come campo del giocatore 2 \\
+\hline
+{\em tets} & array dei tetramini da usare durante la partita \\
+\hline
+{\em com} & se TRUE, il giocatore 2 è il computer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_game_8h_a0daa83b44aae29f3cb852a9f69b204ab}\label{_game_8h_a0daa83b44aae29f3cb852a9f69b204ab}} 
+\index{Game.h@{Game.h}!single\_end\_game@{single\_end\_game}}
+\index{single\_end\_game@{single\_end\_game}!Game.h@{Game.h}}
+\doxysubsubsection{\texorpdfstring{single\_end\_game()}{single\_end\_game()}}
+{\footnotesize\ttfamily void single\+\_\+end\+\_\+game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}}}]{tets\mbox{[}\+TET\+\_\+\+TYPES\mbox{]} }\end{DoxyParamCaption})}
+
+Libera le risorse occupate durante la partita singleplayer e attende un input da tastiera prima di proseguire 
+\begin{DoxyParams}{Parametri}
+{\em tets} & array dei tetramini da deallocare \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_game_8h_ae544ad2f5e5af7ac6a54ce7eb4254222}\label{_game_8h_ae544ad2f5e5af7ac6a54ce7eb4254222}} 
+\index{Game.h@{Game.h}!single\_start\_game@{single\_start\_game}}
+\index{single\_start\_game@{single\_start\_game}!Game.h@{Game.h}}
+\doxysubsubsection{\texorpdfstring{single\_start\_game()}{single\_start\_game()}}
+{\footnotesize\ttfamily void single\+\_\+start\+\_\+game (\begin{DoxyParamCaption}\item[{int}]{field\mbox{[}\+FIELD\+\_\+\+ROWS\mbox{]}\mbox{[}\+FIELD\+\_\+\+COLS\mbox{]},  }\item[{\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}}}]{tets\mbox{[}\+TET\+\_\+\+TYPES\mbox{]} }\end{DoxyParamCaption})}
+
+Prepara e inizia una partita singleplayer e la prosegue finchè non termina 
+\begin{DoxyParams}{Parametri}
+{\em field} & array che si vuole usare come campo \\
+\hline
+{\em tets} & array dei tetramini da usare durante la partita \\
+\hline
+\end{DoxyParams}

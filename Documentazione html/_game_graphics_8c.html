@@ -1,0 +1,818 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>X-Tetris docs: Riferimenti per il file /Users/albertalibeaj/CLionProjects/xtetris/GameGraphics.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">X-Tetris docs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Cerca','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definizioni</a> &#124;
+<a href="#func-members">Funzioni</a> &#124;
+<a href="#var-members">Variabili</a>  </div>
+  <div class="headertitle"><div class="title">Riferimenti per il file /Users/albertalibeaj/CLionProjects/xtetris/GameGraphics.c</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>File di implementazione delle funzioni grafiche utilizzate per la partita.  
+<a href="#details">Continua...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="_game_graphics_8h_source.html">GameGraphics.h</a>&quot;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;ncurses.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="_player_8h_source.html">Player.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Definizioni</h2></td></tr>
+<tr class="memitem:aef75f616b9a3fdb10d38395dfb996873"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_game_graphics_8c.html#aef75f616b9a3fdb10d38395dfb996873">COLOR_ORANGE</a>&#160;&#160;&#160;8</td></tr>
+<tr class="separator:aef75f616b9a3fdb10d38395dfb996873"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16e6f8917a46044c1506956776cc7979"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_game_graphics_8c.html#a16e6f8917a46044c1506956776cc7979">COLOR_INV</a>&#160;&#160;&#160;9</td></tr>
+<tr class="separator:a16e6f8917a46044c1506956776cc7979"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funzioni</h2></td></tr>
+<tr class="memitem:a63790e021bbe6eb4ee0525657d2c8b3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_game_graphics_8c.html#a63790e021bbe6eb4ee0525657d2c8b3f">init_colors</a> ()</td></tr>
+<tr class="separator:a63790e021bbe6eb4ee0525657d2c8b3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e35ac30bac3dba531abcddb832b56a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_game_graphics_8c.html#a7e35ac30bac3dba531abcddb832b56a9">print_field</a> (int field[<a class="el" href="_field_8h.html#aac8212b115bae561910e50f6727650a2">FIELD_ROWS</a>][<a class="el" href="_field_8h.html#a9da2481ad52b5e998640e5aff6970292">FIELD_COLS</a>], WINDOW *win)</td></tr>
+<tr class="separator:a7e35ac30bac3dba531abcddb832b56a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af79d149fe5aeff86ab4431d0aceec2ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_game_graphics_8c.html#af79d149fe5aeff86ab4431d0aceec2ce">print_score</a> (int value, WINDOW *win)</td></tr>
+<tr class="separator:af79d149fe5aeff86ab4431d0aceec2ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a9ec1278beb3adfb42f672afb96190b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_game_graphics_8c.html#a5a9ec1278beb3adfb42f672afb96190b">print_text_helper</a> (char *info, WINDOW *win, int y_start, int x_start, int n_rows, int n_cols)</td></tr>
+<tr class="separator:a5a9ec1278beb3adfb42f672afb96190b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1f9b0f16c22065c594046d7090462c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_game_graphics_8c.html#ad1f9b0f16c22065c594046d7090462c7">single_graphics_init</a> ()</td></tr>
+<tr class="separator:ad1f9b0f16c22065c594046d7090462c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af83bd7d240e6871c6b4be0f887b186e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_game_graphics_8c.html#af83bd7d240e6871c6b4be0f887b186e8">multi_graphics_init</a> ()</td></tr>
+<tr class="separator:af83bd7d240e6871c6b4be0f887b186e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2091d43d573cbae6a8543fca9c71672"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_game_graphics_8c.html#af2091d43d573cbae6a8543fca9c71672">print_tet</a> (<a class="el" href="_pieces_8h.html#a58ddb9bd67b81b90ed44c085b09bbb98">tet_t</a> tet)</td></tr>
+<tr class="separator:af2091d43d573cbae6a8543fca9c71672"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05d07d13775440ac81d3a0903905032a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_game_graphics_8c.html#a05d07d13775440ac81d3a0903905032a">print_info</a> (char *info)</td></tr>
+<tr class="separator:a05d07d13775440ac81d3a0903905032a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94076ca6e85e191d5347876d03d596c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_game_graphics_8c.html#a94076ca6e85e191d5347876d03d596c6">print_game_over</a> (char *info)</td></tr>
+<tr class="separator:a94076ca6e85e191d5347876d03d596c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60e87ca23acb293f0813a9513843c3d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_game_graphics_8c.html#a60e87ca23acb293f0813a9513843c3d1">single_graphics_free</a> ()</td></tr>
+<tr class="separator:a60e87ca23acb293f0813a9513843c3d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab84050db52467f88c9758ed260c54ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_game_graphics_8c.html#aab84050db52467f88c9758ed260c54ef">multi_graphics_free</a> ()</td></tr>
+<tr class="separator:aab84050db52467f88c9758ed260c54ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb8bec540bfee30a8ed42c235e8c6533"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_game_graphics_8c.html#adb8bec540bfee30a8ed42c235e8c6533">game_over_graphics_free</a> ()</td></tr>
+<tr class="separator:adb8bec540bfee30a8ed42c235e8c6533"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62247fd098369a87484c95c326d9110c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_game_graphics_8c.html#a62247fd098369a87484c95c326d9110c">print_player_field</a> (int field[<a class="el" href="_field_8h.html#aac8212b115bae561910e50f6727650a2">FIELD_ROWS</a>][<a class="el" href="_field_8h.html#a9da2481ad52b5e998640e5aff6970292">FIELD_COLS</a>], int player)</td></tr>
+<tr class="separator:a62247fd098369a87484c95c326d9110c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1047fa1076eda8ecf664cad4e673aa0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_game_graphics_8c.html#ab1047fa1076eda8ecf664cad4e673aa0">print_player_score</a> (int score, int player)</td></tr>
+<tr class="separator:ab1047fa1076eda8ecf664cad4e673aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0e45fef884bc70eeec50e315dd0cda6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_game_graphics_8c.html#ae0e45fef884bc70eeec50e315dd0cda6">print_turn</a> (int direction_sx)</td></tr>
+<tr class="separator:ae0e45fef884bc70eeec50e315dd0cda6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae618a3ecbb0d62500bfff666b12b8afc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_game_graphics_8c.html#ae618a3ecbb0d62500bfff666b12b8afc">clear_all</a> ()</td></tr>
+<tr class="separator:ae618a3ecbb0d62500bfff666b12b8afc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05822b0ec3253d70214187eee80ce6a9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_game_graphics_8c.html#a05822b0ec3253d70214187eee80ce6a9">get_input</a> ()</td></tr>
+<tr class="separator:a05822b0ec3253d70214187eee80ce6a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variabili</h2></td></tr>
+<tr class="memitem:a4bfde857a4934ed020d43661d6b0d64e"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_game_graphics_8c.html#a4bfde857a4934ed020d43661d6b0d64e">char_empty_field</a> = &quot; &quot;</td></tr>
+<tr class="separator:a4bfde857a4934ed020d43661d6b0d64e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ca82551fd15c5d9d31871d4724adbd0"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_game_graphics_8c.html#a6ca82551fd15c5d9d31871d4724adbd0">char_value_field</a> = &quot;[#]&quot;</td></tr>
+<tr class="separator:a6ca82551fd15c5d9d31871d4724adbd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4077816a5cf77d9e234ea1bd55fbb19b"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_game_graphics_8c.html#a4077816a5cf77d9e234ea1bd55fbb19b">char_value_invalid</a> = &quot;[X]&quot;</td></tr>
+<tr class="separator:a4077816a5cf77d9e234ea1bd55fbb19b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8b3df59b98fc4aecfbe16b1ad4eca71"><td class="memItemLeft" align="right" valign="top">WINDOW *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_game_graphics_8c.html#ae8b3df59b98fc4aecfbe16b1ad4eca71">main_window</a></td></tr>
+<tr class="separator:ae8b3df59b98fc4aecfbe16b1ad4eca71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefcb5b4a8c665c5f4029793475f845e8"><td class="memItemLeft" align="right" valign="top">WINDOW *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_game_graphics_8c.html#aefcb5b4a8c665c5f4029793475f845e8">field_window</a></td></tr>
+<tr class="separator:aefcb5b4a8c665c5f4029793475f845e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc569038dd54b43b7540ad54aaaa4f2f"><td class="memItemLeft" align="right" valign="top">WINDOW *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_game_graphics_8c.html#adc569038dd54b43b7540ad54aaaa4f2f">score_window</a></td></tr>
+<tr class="separator:adc569038dd54b43b7540ad54aaaa4f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa64a534fb6db2326d37f984d91f52655"><td class="memItemLeft" align="right" valign="top">WINDOW *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_game_graphics_8c.html#aa64a534fb6db2326d37f984d91f52655">tet_window</a></td></tr>
+<tr class="separator:aa64a534fb6db2326d37f984d91f52655"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b75a41052b08653ef6f192c4c921e5f"><td class="memItemLeft" align="right" valign="top">WINDOW *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_game_graphics_8c.html#a3b75a41052b08653ef6f192c4c921e5f">info_window</a></td></tr>
+<tr class="separator:a3b75a41052b08653ef6f192c4c921e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace3b6077eb7e24380491cf2510a9ccaa"><td class="memItemLeft" align="right" valign="top">WINDOW *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_game_graphics_8c.html#ace3b6077eb7e24380491cf2510a9ccaa">second_field_window</a></td></tr>
+<tr class="separator:ace3b6077eb7e24380491cf2510a9ccaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d577c765651bb73146a006ba8de3d4f"><td class="memItemLeft" align="right" valign="top">WINDOW *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_game_graphics_8c.html#a2d577c765651bb73146a006ba8de3d4f">second_score_window</a></td></tr>
+<tr class="separator:a2d577c765651bb73146a006ba8de3d4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3383bd690fe217dc27473d0aeb2cbbc"><td class="memItemLeft" align="right" valign="top">WINDOW *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_game_graphics_8c.html#aa3383bd690fe217dc27473d0aeb2cbbc">turn_window</a></td></tr>
+<tr class="separator:aa3383bd690fe217dc27473d0aeb2cbbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4008305b2a71ff6bef4ed96c941bd41"><td class="memItemLeft" align="right" valign="top">WINDOW *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_game_graphics_8c.html#ac4008305b2a71ff6bef4ed96c941bd41">game_over_window</a></td></tr>
+<tr class="separator:ac4008305b2a71ff6bef4ed96c941bd41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrizione dettagliata</h2>
+<div class="textblock"><p >File di implementazione delle funzioni grafiche utilizzate per la partita. </p>
+<dl class="section author"><dt>Autore</dt><dd>Albert Alibeaj </dd></dl>
+</div><h2 class="groupheader">Documentazione delle definizioni</h2>
+<a id="a16e6f8917a46044c1506956776cc7979" name="a16e6f8917a46044c1506956776cc7979"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16e6f8917a46044c1506956776cc7979">&#9670;&nbsp;</a></span>COLOR_INV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define COLOR_INV&#160;&#160;&#160;9</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >identificativo del colore da usare per le righe invertite (multiplayer) </p>
+
+</div>
+</div>
+<a id="aef75f616b9a3fdb10d38395dfb996873" name="aef75f616b9a3fdb10d38395dfb996873"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef75f616b9a3fdb10d38395dfb996873">&#9670;&nbsp;</a></span>COLOR_ORANGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define COLOR_ORANGE&#160;&#160;&#160;8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >identificativo del colore arancione che è stato ridefinito </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentazione delle funzioni</h2>
+<a id="ae618a3ecbb0d62500bfff666b12b8afc" name="ae618a3ecbb0d62500bfff666b12b8afc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae618a3ecbb0d62500bfff666b12b8afc">&#9670;&nbsp;</a></span>clear_all()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void clear_all </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Cancella tutta la grafica dalla schermata </p>
+
+</div>
+</div>
+<a id="adb8bec540bfee30a8ed42c235e8c6533" name="adb8bec540bfee30a8ed42c235e8c6533"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb8bec540bfee30a8ed42c235e8c6533">&#9670;&nbsp;</a></span>game_over_graphics_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void game_over_graphics_free </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Libera la memoria allocata per la grafica del game over </p>
+
+</div>
+</div>
+<a id="a05822b0ec3253d70214187eee80ce6a9" name="a05822b0ec3253d70214187eee80ce6a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05822b0ec3253d70214187eee80ce6a9">&#9670;&nbsp;</a></span>get_input()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int get_input </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Attende l'input da tastiera dell'utente </p><dl class="section return"><dt>Restituisce</dt><dd>valore del tasto premuto </dd></dl>
+
+</div>
+</div>
+<a id="a63790e021bbe6eb4ee0525657d2c8b3f" name="a63790e021bbe6eb4ee0525657d2c8b3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63790e021bbe6eb4ee0525657d2c8b3f">&#9670;&nbsp;</a></span>init_colors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void init_colors </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Inizializza variabili contenenti i colori da utiilizzare nel terminale </p>
+
+</div>
+</div>
+<a id="aab84050db52467f88c9758ed260c54ef" name="aab84050db52467f88c9758ed260c54ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab84050db52467f88c9758ed260c54ef">&#9670;&nbsp;</a></span>multi_graphics_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void multi_graphics_free </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Libera la memoria allocata per la grafica di una partita multiplayer </p>
+
+</div>
+</div>
+<a id="af83bd7d240e6871c6b4be0f887b186e8" name="af83bd7d240e6871c6b4be0f887b186e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af83bd7d240e6871c6b4be0f887b186e8">&#9670;&nbsp;</a></span>multi_graphics_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void multi_graphics_init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Alloca la memoria per la grafica di una partita multiplayer </p>
+
+</div>
+</div>
+<a id="a7e35ac30bac3dba531abcddb832b56a9" name="a7e35ac30bac3dba531abcddb832b56a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e35ac30bac3dba531abcddb832b56a9">&#9670;&nbsp;</a></span>print_field()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void print_field </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>field</em>[FIELD_ROWS][FIELD_COLS], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WINDOW *&#160;</td>
+          <td class="paramname"><em>win</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Stampa il campo in una finestra specifica (parte della schermata intera) </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">field</td><td>campo da stampare </td></tr>
+    <tr><td class="paramname">win</td><td>finestra su cui stampare il campo </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a94076ca6e85e191d5347876d03d596c6" name="a94076ca6e85e191d5347876d03d596c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94076ca6e85e191d5347876d03d596c6">&#9670;&nbsp;</a></span>print_game_over()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void print_game_over </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Stampa la schermata di game over, con una stringa di specificazione, con a capo automatico e senza spezzare le parole </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">info</td><td>stringa da stampare </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a05d07d13775440ac81d3a0903905032a" name="a05d07d13775440ac81d3a0903905032a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05d07d13775440ac81d3a0903905032a">&#9670;&nbsp;</a></span>print_info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void print_info </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Stampa una stringa nel riquadro informazioni, con a capo automatico e senza spezzare le parole </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">info</td><td>stringa da stampare </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a62247fd098369a87484c95c326d9110c" name="a62247fd098369a87484c95c326d9110c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62247fd098369a87484c95c326d9110c">&#9670;&nbsp;</a></span>print_player_field()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void print_player_field </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>field</em>[FIELD_ROWS][FIELD_COLS], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>player</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Stampa il campo di un giocatore nel suo riquadro. Distingue i tetramini e usa colri diversi per ciascuno </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">field</td><td>campo da stampare </td></tr>
+    <tr><td class="paramname">player</td><td>giocatore per il quale stampare il campo </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab1047fa1076eda8ecf664cad4e673aa0" name="ab1047fa1076eda8ecf664cad4e673aa0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1047fa1076eda8ecf664cad4e673aa0">&#9670;&nbsp;</a></span>print_player_score()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void print_player_score </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>score</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>player</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Stampa il punteggio di un giocatore nel suo riquadro. </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">score</td><td>valore da stampare </td></tr>
+    <tr><td class="paramname">player</td><td>giocatore per il quale stampare il punteggio </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af79d149fe5aeff86ab4431d0aceec2ce" name="af79d149fe5aeff86ab4431d0aceec2ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af79d149fe5aeff86ab4431d0aceec2ce">&#9670;&nbsp;</a></span>print_score()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void print_score </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WINDOW *&#160;</td>
+          <td class="paramname"><em>win</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Stampa il punteggio in una finestra specifica (parte della schermata intera) </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>punteggio da stampare </td></tr>
+    <tr><td class="paramname">win</td><td>finestra su cui stampare il punteggio </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af2091d43d573cbae6a8543fca9c71672" name="af2091d43d573cbae6a8543fca9c71672"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2091d43d573cbae6a8543fca9c71672">&#9670;&nbsp;</a></span>print_tet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void print_tet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_pieces_8h.html#a58ddb9bd67b81b90ed44c085b09bbb98">tet_t</a>&#160;</td>
+          <td class="paramname"><em>tet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Stampa a video un tetramino, nel suo riquadro e con la forma (rotazione) corrente </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tet</td><td>il tetramino da stampare </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5a9ec1278beb3adfb42f672afb96190b" name="a5a9ec1278beb3adfb42f672afb96190b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a9ec1278beb3adfb42f672afb96190b">&#9670;&nbsp;</a></span>print_text_helper()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void print_text_helper </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WINDOW *&#160;</td>
+          <td class="paramname"><em>win</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y_start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x_start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n_rows</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n_cols</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Stampa il testo in una finestra con a capo automatico e senza spezzare le parole </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">info</td><td>testo da stampare </td></tr>
+    <tr><td class="paramname">win</td><td>finestra su cui stampare la stringa </td></tr>
+    <tr><td class="paramname">y_start</td><td>riga della finestra da cui iniziare la stampa </td></tr>
+    <tr><td class="paramname">x_start</td><td>colonna della finestra da cui iniziare la stampa </td></tr>
+    <tr><td class="paramname">n_rows</td><td>numero di righe utilizzabili per la stampa </td></tr>
+    <tr><td class="paramname">n_cols</td><td>numero di colonne ultizzabili per la stampa </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae0e45fef884bc70eeec50e315dd0cda6" name="ae0e45fef884bc70eeec50e315dd0cda6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0e45fef884bc70eeec50e315dd0cda6">&#9670;&nbsp;</a></span>print_turn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void print_turn </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>direction_sx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Stampa una freccia che indica di chi è il turno. </p><dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">direction_sx</td><td>se TRUE la freccia punta a sinistra, altrimenti a destra </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a60e87ca23acb293f0813a9513843c3d1" name="a60e87ca23acb293f0813a9513843c3d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60e87ca23acb293f0813a9513843c3d1">&#9670;&nbsp;</a></span>single_graphics_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void single_graphics_free </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Libera la memoria allocata per la grafica di una partita singleplayer </p>
+
+</div>
+</div>
+<a id="ad1f9b0f16c22065c594046d7090462c7" name="ad1f9b0f16c22065c594046d7090462c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1f9b0f16c22065c594046d7090462c7">&#9670;&nbsp;</a></span>single_graphics_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void single_graphics_init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Alloca la memoria per la grafica di una partita singleplayer </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentazione delle variabili</h2>
+<a id="a4bfde857a4934ed020d43661d6b0d64e" name="a4bfde857a4934ed020d43661d6b0d64e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bfde857a4934ed020d43661d6b0d64e">&#9670;&nbsp;</a></span>char_empty_field</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* char_empty_field = &quot; &quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >codifica cella del campo vuota </p>
+
+</div>
+</div>
+<a id="a6ca82551fd15c5d9d31871d4724adbd0" name="a6ca82551fd15c5d9d31871d4724adbd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ca82551fd15c5d9d31871d4724adbd0">&#9670;&nbsp;</a></span>char_value_field</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* char_value_field = &quot;[#]&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >codifica cella del campo piena </p>
+
+</div>
+</div>
+<a id="a4077816a5cf77d9e234ea1bd55fbb19b" name="a4077816a5cf77d9e234ea1bd55fbb19b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4077816a5cf77d9e234ea1bd55fbb19b">&#9670;&nbsp;</a></span>char_value_invalid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* char_value_invalid = &quot;[X]&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >codifica cella fuori dal campo </p>
+
+</div>
+</div>
+<a id="aefcb5b4a8c665c5f4029793475f845e8" name="aefcb5b4a8c665c5f4029793475f845e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefcb5b4a8c665c5f4029793475f845e8">&#9670;&nbsp;</a></span>field_window</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">WINDOW* field_window</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >sottofinestra che contiene la grafica del campo 1 <br  />
+ </p>
+
+</div>
+</div>
+<a id="ac4008305b2a71ff6bef4ed96c941bd41" name="ac4008305b2a71ff6bef4ed96c941bd41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4008305b2a71ff6bef4ed96c941bd41">&#9670;&nbsp;</a></span>game_over_window</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">WINDOW* game_over_window</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >finestra che contiene la grafica della schermata di game over </p>
+
+</div>
+</div>
+<a id="a3b75a41052b08653ef6f192c4c921e5f" name="a3b75a41052b08653ef6f192c4c921e5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b75a41052b08653ef6f192c4c921e5f">&#9670;&nbsp;</a></span>info_window</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">WINDOW* info_window</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >sottofinestra che contiene la grafica del box informazioni </p>
+
+</div>
+</div>
+<a id="ae8b3df59b98fc4aecfbe16b1ad4eca71" name="ae8b3df59b98fc4aecfbe16b1ad4eca71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8b3df59b98fc4aecfbe16b1ad4eca71">&#9670;&nbsp;</a></span>main_window</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">WINDOW* main_window</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >finestra che contiene la sottofinestre per la grafica della partita </p>
+
+</div>
+</div>
+<a id="adc569038dd54b43b7540ad54aaaa4f2f" name="adc569038dd54b43b7540ad54aaaa4f2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc569038dd54b43b7540ad54aaaa4f2f">&#9670;&nbsp;</a></span>score_window</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">WINDOW* score_window</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >sottofinestra che contiene la grafica del punteggio 1 </p>
+
+</div>
+</div>
+<a id="ace3b6077eb7e24380491cf2510a9ccaa" name="ace3b6077eb7e24380491cf2510a9ccaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace3b6077eb7e24380491cf2510a9ccaa">&#9670;&nbsp;</a></span>second_field_window</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">WINDOW* second_field_window</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >sottofinestra che contiene la grafica del campo 2 (multiplayer) </p>
+
+</div>
+</div>
+<a id="a2d577c765651bb73146a006ba8de3d4f" name="a2d577c765651bb73146a006ba8de3d4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d577c765651bb73146a006ba8de3d4f">&#9670;&nbsp;</a></span>second_score_window</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">WINDOW* second_score_window</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >sottofinestra che contiene la grafica del punteggio 2 (multiplayer) </p>
+
+</div>
+</div>
+<a id="aa64a534fb6db2326d37f984d91f52655" name="aa64a534fb6db2326d37f984d91f52655"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa64a534fb6db2326d37f984d91f52655">&#9670;&nbsp;</a></span>tet_window</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">WINDOW* tet_window</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >sottofinestra che contiene la grafica dei tetramini </p>
+
+</div>
+</div>
+<a id="aa3383bd690fe217dc27473d0aeb2cbbc" name="aa3383bd690fe217dc27473d0aeb2cbbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3383bd690fe217dc27473d0aeb2cbbc">&#9670;&nbsp;</a></span>turn_window</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">WINDOW* turn_window</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >sottofinestra che contiene la grafica della freccia che indica il turno (multiplayer) </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generato da&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

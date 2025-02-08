@@ -1,0 +1,88 @@
+\hypertarget{_moves_8h}{}\doxysection{Riferimenti per il file /\+Users/albertalibeaj/\+CLion\+Projects/xtetris/\+Moves.h}
+\label{_moves_8h}\index{/Users/albertalibeaj/CLionProjects/xtetris/Moves.h@{/Users/albertalibeaj/CLionProjects/xtetris/Moves.h}}
+
+
+Libreria che implementa i movimenti dei tetramini all\textquotesingle{}interno del campo, come l\textquotesingle{}inserimento e la rotazione.  
+
+
+{\ttfamily \#include \char`\"{}Field.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Pieces.\+h\char`\"{}}\newline
+\doxysubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_moves_8h_ac9d9fd3abf8798e163332a5418c78b50}{insert}} (int field\mbox{[}\mbox{\hyperlink{_field_8h_aac8212b115bae561910e50f6727650a2}{FIELD\+\_\+\+ROWS}}\mbox{]}\mbox{[}\mbox{\hyperlink{_field_8h_a9da2481ad52b5e998640e5aff6970292}{FIELD\+\_\+\+COLS}}\mbox{]}, \mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} $\ast$tet, int column, int rotation)
+\item 
+void \mbox{\hyperlink{_moves_8h_a37e793594b90db6c52f184075e762a0e}{rotate\+\_\+dx}} (\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} $\ast$tet, int n)
+\item 
+void \mbox{\hyperlink{_moves_8h_a43cecd163ab3ae5c1b68ea55ba3eb996}{rotate\+\_\+sx}} (\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} $\ast$tet, int n)
+\item 
+void \mbox{\hyperlink{_moves_8h_aaa0ac8b9e781086a1a50399434296cf0}{reset\+\_\+shape}} (\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} $\ast$tet)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+Libreria che implementa i movimenti dei tetramini all\textquotesingle{}interno del campo, come l\textquotesingle{}inserimento e la rotazione. 
+
+\begin{DoxyAuthor}{Autore}
+Albert Alibeaj 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{_moves_8h_ac9d9fd3abf8798e163332a5418c78b50}\label{_moves_8h_ac9d9fd3abf8798e163332a5418c78b50}} 
+\index{Moves.h@{Moves.h}!insert@{insert}}
+\index{insert@{insert}!Moves.h@{Moves.h}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily int insert (\begin{DoxyParamCaption}\item[{int}]{field\mbox{[}\+FIELD\+\_\+\+ROWS\mbox{]}\mbox{[}\+FIELD\+\_\+\+COLS\mbox{]},  }\item[{\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} $\ast$}]{tet,  }\item[{int}]{column,  }\item[{int}]{rotation }\end{DoxyParamCaption})}
+
+Inserisce un tetramino all\textquotesingle{}interno del campo di gioco 
+\begin{DoxyParams}{Parametri}
+{\em field} & array di interi in cui inserire il tetramino \\
+\hline
+{\em tet} & il tetramino da inserire \\
+\hline
+{\em column} & colonna in cui inserire il tetramino \\
+\hline
+{\em rotation} & numero di rotazioni verso destra a partire dalla forma base \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+punti guadagnati dall\textquotesingle{}inserimento 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_moves_8h_aaa0ac8b9e781086a1a50399434296cf0}\label{_moves_8h_aaa0ac8b9e781086a1a50399434296cf0}} 
+\index{Moves.h@{Moves.h}!reset\_shape@{reset\_shape}}
+\index{reset\_shape@{reset\_shape}!Moves.h@{Moves.h}}
+\doxysubsubsection{\texorpdfstring{reset\_shape()}{reset\_shape()}}
+{\footnotesize\ttfamily void reset\+\_\+shape (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} $\ast$}]{tet }\end{DoxyParamCaption})}
+
+Riporta la forma corrente di un tetramino alla forma base ruotandolo 
+\begin{DoxyParams}{Parametri}
+{\em tet} & array di cui ripristinare la forma iniziale \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_moves_8h_a37e793594b90db6c52f184075e762a0e}\label{_moves_8h_a37e793594b90db6c52f184075e762a0e}} 
+\index{Moves.h@{Moves.h}!rotate\_dx@{rotate\_dx}}
+\index{rotate\_dx@{rotate\_dx}!Moves.h@{Moves.h}}
+\doxysubsubsection{\texorpdfstring{rotate\_dx()}{rotate\_dx()}}
+{\footnotesize\ttfamily void rotate\+\_\+dx (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} $\ast$}]{tet,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+Ruota un tetramino a destra (90°) a partire dalla forma corrente 
+\begin{DoxyParams}{Parametri}
+{\em tet} & tetramino di cui ruotare il campo shape \\
+\hline
+{\em n} & numero di rotazioni a destra \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_moves_8h_a43cecd163ab3ae5c1b68ea55ba3eb996}\label{_moves_8h_a43cecd163ab3ae5c1b68ea55ba3eb996}} 
+\index{Moves.h@{Moves.h}!rotate\_sx@{rotate\_sx}}
+\index{rotate\_sx@{rotate\_sx}!Moves.h@{Moves.h}}
+\doxysubsubsection{\texorpdfstring{rotate\_sx()}{rotate\_sx()}}
+{\footnotesize\ttfamily void rotate\+\_\+sx (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} $\ast$}]{tet,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+Ruota un tetramino a sinistra (90°) a partire dalla forma corrente 
+\begin{DoxyParams}{Parametri}
+{\em tet} & tetramino di cui ruotare il campo shape \\
+\hline
+{\em n} & numero di rotazioni a sinistra \\
+\hline
+\end{DoxyParams}

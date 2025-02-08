@@ -1,0 +1,83 @@
+\hypertarget{_pieces_8c}{}\doxysection{Riferimenti per il file /\+Users/albertalibeaj/\+CLion\+Projects/xtetris/\+Pieces.c}
+\label{_pieces_8c}\index{/Users/albertalibeaj/CLionProjects/xtetris/Pieces.c@{/Users/albertalibeaj/CLionProjects/xtetris/Pieces.c}}
+
+
+File di implementazione delle funzioni per le proprietà dei tetramini utilizzate per la partita.  
+
+
+{\ttfamily \#include \char`\"{}Pieces.\+h\char`\"{}}\newline
+\doxysubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_pieces_8c_a99a2e98f32b81594c00be047e34b0526}{tet\+\_\+base\+\_\+shape\+\_\+set}} (\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} $\ast$tet, const int $\ast$shape, int dim)
+\item 
+void \mbox{\hyperlink{_pieces_8c_a4d6f0658c7c0c390703a788e99209613}{tets\+\_\+init}} (\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} tets\mbox{[}\mbox{\hyperlink{_pieces_8h_a0285e99e1babc9994ba2048d86ab775b}{TET\+\_\+\+TYPES}}\mbox{]}, int multiplayer)
+\item 
+void \mbox{\hyperlink{_pieces_8c_a9a9a6931aa9599df85efb500038686b3}{tets\+\_\+free}} (\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} tets\mbox{[}\mbox{\hyperlink{_pieces_8h_a0285e99e1babc9994ba2048d86ab775b}{TET\+\_\+\+TYPES}}\mbox{]})
+\item 
+int \mbox{\hyperlink{_pieces_8c_a3a0019a8791448f5d2185dcb1b7d69d0}{tet\+\_\+width}} (\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} tet)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+File di implementazione delle funzioni per le proprietà dei tetramini utilizzate per la partita. 
+
+\begin{DoxyAuthor}{Autore}
+Albert Alibeaj 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{_pieces_8c_a99a2e98f32b81594c00be047e34b0526}\label{_pieces_8c_a99a2e98f32b81594c00be047e34b0526}} 
+\index{Pieces.c@{Pieces.c}!tet\_base\_shape\_set@{tet\_base\_shape\_set}}
+\index{tet\_base\_shape\_set@{tet\_base\_shape\_set}!Pieces.c@{Pieces.c}}
+\doxysubsubsection{\texorpdfstring{tet\_base\_shape\_set()}{tet\_base\_shape\_set()}}
+{\footnotesize\ttfamily void tet\+\_\+base\+\_\+shape\+\_\+set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} $\ast$}]{tet,  }\item[{const int $\ast$}]{shape,  }\item[{int}]{dim }\end{DoxyParamCaption})}
+
+Alloca la memoria per la forma base e la forma corrente di un tetramino e la inizializza 
+\begin{DoxyParams}{Parametri}
+{\em tet} & tetramino a cui assegnare forma e forma base \\
+\hline
+{\em shape} & array da copiare nei campi del tetramino \\
+\hline
+{\em dim} & lunghezza dell\textquotesingle{}array da copiare \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_pieces_8c_a3a0019a8791448f5d2185dcb1b7d69d0}\label{_pieces_8c_a3a0019a8791448f5d2185dcb1b7d69d0}} 
+\index{Pieces.c@{Pieces.c}!tet\_width@{tet\_width}}
+\index{tet\_width@{tet\_width}!Pieces.c@{Pieces.c}}
+\doxysubsubsection{\texorpdfstring{tet\_width()}{tet\_width()}}
+{\footnotesize\ttfamily int tet\+\_\+width (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}}}]{tet }\end{DoxyParamCaption})}
+
+Calcola lo spazio occupato in larghezza da un tetramino 
+\begin{DoxyParams}{Parametri}
+{\em tet} & tetramino di cui calcolare la larghezza \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+larghezza effettiva nella forma corrente 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_pieces_8c_a9a9a6931aa9599df85efb500038686b3}\label{_pieces_8c_a9a9a6931aa9599df85efb500038686b3}} 
+\index{Pieces.c@{Pieces.c}!tets\_free@{tets\_free}}
+\index{tets\_free@{tets\_free}!Pieces.c@{Pieces.c}}
+\doxysubsubsection{\texorpdfstring{tets\_free()}{tets\_free()}}
+{\footnotesize\ttfamily void tets\+\_\+free (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}}}]{tets\mbox{[}\+TET\+\_\+\+TYPES\mbox{]} }\end{DoxyParamCaption})}
+
+Libera la memoria allocata dai tetramini 
+\begin{DoxyParams}{Parametri}
+{\em tets} & array di tetramini da deallocare \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_pieces_8c_a4d6f0658c7c0c390703a788e99209613}\label{_pieces_8c_a4d6f0658c7c0c390703a788e99209613}} 
+\index{Pieces.c@{Pieces.c}!tets\_init@{tets\_init}}
+\index{tets\_init@{tets\_init}!Pieces.c@{Pieces.c}}
+\doxysubsubsection{\texorpdfstring{tets\_init()}{tets\_init()}}
+{\footnotesize\ttfamily void tets\+\_\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}}}]{tets\mbox{[}\+TET\+\_\+\+TYPES\mbox{]},  }\item[{int}]{multiplayer }\end{DoxyParamCaption})}
+
+Inizializza i tetramini. Alloca gli array e imposta i valori iniziali 
+\begin{DoxyParams}{Parametri}
+{\em tets} & array di tetramini da riempire al termine della funzione \\
+\hline
+{\em multiplayer} & se TRUE le quantità sono raddoppiate \\
+\hline
+\end{DoxyParams}

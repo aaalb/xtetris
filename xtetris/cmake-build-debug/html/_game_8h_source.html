@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>X-Tetris docs:  File sorgente /Users/albertalibeaj/CLionProjects/xtetris/Game.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">X-Tetris docs
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Cerca','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">/Users/albertalibeaj/CLionProjects/xtetris/Game.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_game_8h.html">Vai alla documentazione di questo file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#ifndef XTETRIS2_GAME_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define XTETRIS2_GAME_H</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="_moves_8h.html">Moves.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keywordtype">void</span> <a class="code hl_function" href="_game_8h.html#ae544ad2f5e5af7ac6a54ce7eb4254222">single_start_game</a>(<span class="keywordtype">int</span> field[<a class="code hl_define" href="_field_8h.html#aac8212b115bae561910e50f6727650a2">FIELD_ROWS</a>][<a class="code hl_define" href="_field_8h.html#a9da2481ad52b5e998640e5aff6970292">FIELD_COLS</a>], <a class="code hl_struct" href="struct_tetramino.html">tet_t</a> tets[<a class="code hl_define" href="_pieces_8h.html#a0285e99e1babc9994ba2048d86ab775b">TET_TYPES</a>]);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keywordtype">void</span> <a class="code hl_function" href="_game_8h.html#a0daa83b44aae29f3cb852a9f69b204ab">single_end_game</a>(<a class="code hl_struct" href="struct_tetramino.html">tet_t</a> tets[<a class="code hl_define" href="_pieces_8h.html#a0285e99e1babc9994ba2048d86ab775b">TET_TYPES</a>]);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keywordtype">void</span> <a class="code hl_function" href="_game_8h.html#a5e562809124be1f220bb481110032a17">multi_start_game</a>(<span class="keywordtype">int</span> f1[<a class="code hl_define" href="_field_8h.html#aac8212b115bae561910e50f6727650a2">FIELD_ROWS</a>][<a class="code hl_define" href="_field_8h.html#a9da2481ad52b5e998640e5aff6970292">FIELD_COLS</a>], <span class="keywordtype">int</span> f2[<a class="code hl_define" href="_field_8h.html#aac8212b115bae561910e50f6727650a2">FIELD_ROWS</a>][<a class="code hl_define" href="_field_8h.html#a9da2481ad52b5e998640e5aff6970292">FIELD_COLS</a>], <a class="code hl_struct" href="struct_tetramino.html">tet_t</a> tets[<a class="code hl_define" href="_pieces_8h.html#a0285e99e1babc9994ba2048d86ab775b">TET_TYPES</a>], <span class="keywordtype">int</span> com);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keywordtype">void</span> <a class="code hl_function" href="_game_8h.html#a6c2f059464ae08b15859231810cd4399">multi_end_game</a>(<a class="code hl_struct" href="struct_tetramino.html">tet_t</a> tets[<a class="code hl_define" href="_pieces_8h.html#a0285e99e1babc9994ba2048d86ab775b">TET_TYPES</a>]);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#endif </span><span class="comment">/*XTETRIS2_GAME_H*/</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a_field_8h_html_a9da2481ad52b5e998640e5aff6970292"><div class="ttname"><a href="_field_8h.html#a9da2481ad52b5e998640e5aff6970292">FIELD_COLS</a></div><div class="ttdeci">#define FIELD_COLS</div><div class="ttdef"><b>Definition:</b> Field.h:18</div></div>
+<div class="ttc" id="a_field_8h_html_aac8212b115bae561910e50f6727650a2"><div class="ttname"><a href="_field_8h.html#aac8212b115bae561910e50f6727650a2">FIELD_ROWS</a></div><div class="ttdeci">#define FIELD_ROWS</div><div class="ttdef"><b>Definition:</b> Field.h:16</div></div>
+<div class="ttc" id="a_game_8h_html_a0daa83b44aae29f3cb852a9f69b204ab"><div class="ttname"><a href="_game_8h.html#a0daa83b44aae29f3cb852a9f69b204ab">single_end_game</a></div><div class="ttdeci">void single_end_game(tet_t tets[TET_TYPES])</div><div class="ttdef"><b>Definition:</b> Game.c:126</div></div>
+<div class="ttc" id="a_game_8h_html_a5e562809124be1f220bb481110032a17"><div class="ttname"><a href="_game_8h.html#a5e562809124be1f220bb481110032a17">multi_start_game</a></div><div class="ttdeci">void multi_start_game(int f1[FIELD_ROWS][FIELD_COLS], int f2[FIELD_ROWS][FIELD_COLS], tet_t tets[TET_TYPES], int com)</div><div class="ttdef"><b>Definition:</b> Game.c:151</div></div>
+<div class="ttc" id="a_game_8h_html_a6c2f059464ae08b15859231810cd4399"><div class="ttname"><a href="_game_8h.html#a6c2f059464ae08b15859231810cd4399">multi_end_game</a></div><div class="ttdeci">void multi_end_game(tet_t tets[TET_TYPES])</div><div class="ttdef"><b>Definition:</b> Game.c:241</div></div>
+<div class="ttc" id="a_game_8h_html_ae544ad2f5e5af7ac6a54ce7eb4254222"><div class="ttname"><a href="_game_8h.html#ae544ad2f5e5af7ac6a54ce7eb4254222">single_start_game</a></div><div class="ttdeci">void single_start_game(int field[FIELD_ROWS][FIELD_COLS], tet_t tets[TET_TYPES])</div><div class="ttdef"><b>Definition:</b> Game.c:99</div></div>
+<div class="ttc" id="a_moves_8h_html"><div class="ttname"><a href="_moves_8h.html">Moves.h</a></div><div class="ttdoc">Libreria che implementa i movimenti dei tetramini all'interno del campo, come l'inserimento e la rota...</div></div>
+<div class="ttc" id="a_pieces_8h_html_a0285e99e1babc9994ba2048d86ab775b"><div class="ttname"><a href="_pieces_8h.html#a0285e99e1babc9994ba2048d86ab775b">TET_TYPES</a></div><div class="ttdeci">#define TET_TYPES</div><div class="ttdef"><b>Definition:</b> Pieces.h:14</div></div>
+<div class="ttc" id="astruct_tetramino_html"><div class="ttname"><a href="struct_tetramino.html">Tetramino</a></div><div class="ttdef"><b>Definition:</b> Pieces.h:20</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generato da&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

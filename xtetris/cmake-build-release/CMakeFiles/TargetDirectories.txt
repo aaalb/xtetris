@@ -1,0 +1,3 @@
+/Users/albertalibeaj/CLionProjects/xtetris/cmake-build-release/CMakeFiles/xtetris.dir
+/Users/albertalibeaj/CLionProjects/xtetris/cmake-build-release/CMakeFiles/edit_cache.dir
+/Users/albertalibeaj/CLionProjects/xtetris/cmake-build-release/CMakeFiles/rebuild_cache.dir

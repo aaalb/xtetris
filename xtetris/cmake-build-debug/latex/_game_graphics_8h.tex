@@ -1,0 +1,219 @@
+\hypertarget{_game_graphics_8h}{}\doxysection{Riferimenti per il file /\+Users/albertalibeaj/\+CLion\+Projects/xtetris/\+Game\+Graphics.h}
+\label{_game_graphics_8h}\index{/Users/albertalibeaj/CLionProjects/xtetris/GameGraphics.h@{/Users/albertalibeaj/CLionProjects/xtetris/GameGraphics.h}}
+
+
+Libreria che si occupa della parte grafica del programma, in particolare stampa campi, tetramini, punteggi e messaggi.  
+
+
+{\ttfamily \#include \char`\"{}Field.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Pieces.\+h\char`\"{}}\newline
+\doxysubsection*{Definizioni}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_game_graphics_8h_a203163bc0189184a1de6ca8d1e53c6bf}{KEY\+\_\+\+DOWN}}~(258)
+\item 
+\#define \mbox{\hyperlink{_game_graphics_8h_afa086fc916a81e7fd348ec00cf786916}{KEY\+\_\+\+UP}}~(259)
+\item 
+\#define \mbox{\hyperlink{_game_graphics_8h_af4d1b8a2912354646c74cf36c69f8223}{KEY\+\_\+\+LEFT}}~(260)
+\item 
+\#define \mbox{\hyperlink{_game_graphics_8h_a004194639b9ad76cea01d9e93716d4d6}{KEY\+\_\+\+RIGHT}}~(261)
+\item 
+\#define \mbox{\hyperlink{_game_graphics_8h_abaee5edb96e542206ae6c8102ac228af}{KEY\+\_\+\+ENTER}}~(10)
+\item 
+\#define \mbox{\hyperlink{_game_graphics_8h_a1e9a449dee19c686a2af4edcdc1a1042}{KEY\+\_\+\+BACKSPACE}}~(127)
+\end{DoxyCompactItemize}
+\doxysubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_game_graphics_8h_ad1f9b0f16c22065c594046d7090462c7}{single\+\_\+graphics\+\_\+init}} ()
+\item 
+void \mbox{\hyperlink{_game_graphics_8h_af83bd7d240e6871c6b4be0f887b186e8}{multi\+\_\+graphics\+\_\+init}} ()
+\item 
+void \mbox{\hyperlink{_game_graphics_8h_af2091d43d573cbae6a8543fca9c71672}{print\+\_\+tet}} (\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}} tet)
+\item 
+void \mbox{\hyperlink{_game_graphics_8h_a05d07d13775440ac81d3a0903905032a}{print\+\_\+info}} (char $\ast$info)
+\item 
+void \mbox{\hyperlink{_game_graphics_8h_a62247fd098369a87484c95c326d9110c}{print\+\_\+player\+\_\+field}} (int field\mbox{[}\mbox{\hyperlink{_field_8h_aac8212b115bae561910e50f6727650a2}{FIELD\+\_\+\+ROWS}}\mbox{]}\mbox{[}\mbox{\hyperlink{_field_8h_a9da2481ad52b5e998640e5aff6970292}{FIELD\+\_\+\+COLS}}\mbox{]}, int player)
+\item 
+void \mbox{\hyperlink{_game_graphics_8h_ab1047fa1076eda8ecf664cad4e673aa0}{print\+\_\+player\+\_\+score}} (int score, int player)
+\item 
+void \mbox{\hyperlink{_game_graphics_8h_ae0e45fef884bc70eeec50e315dd0cda6}{print\+\_\+turn}} (int direction\+\_\+sx)
+\item 
+void \mbox{\hyperlink{_game_graphics_8h_a94076ca6e85e191d5347876d03d596c6}{print\+\_\+game\+\_\+over}} (char $\ast$info)
+\item 
+void \mbox{\hyperlink{_game_graphics_8h_a60e87ca23acb293f0813a9513843c3d1}{single\+\_\+graphics\+\_\+free}} ()
+\item 
+void \mbox{\hyperlink{_game_graphics_8h_aab84050db52467f88c9758ed260c54ef}{multi\+\_\+graphics\+\_\+free}} ()
+\item 
+void \mbox{\hyperlink{_game_graphics_8h_adb8bec540bfee30a8ed42c235e8c6533}{game\+\_\+over\+\_\+graphics\+\_\+free}} ()
+\item 
+void \mbox{\hyperlink{_game_graphics_8h_ae618a3ecbb0d62500bfff666b12b8afc}{clear\+\_\+all}} ()
+\item 
+int \mbox{\hyperlink{_game_graphics_8h_a05822b0ec3253d70214187eee80ce6a9}{get\+\_\+input}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+Libreria che si occupa della parte grafica del programma, in particolare stampa campi, tetramini, punteggi e messaggi. 
+
+\begin{DoxyAuthor}{Autore}
+Albert Alibeaj 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentazione delle definizioni}
+\mbox{\Hypertarget{_game_graphics_8h_a1e9a449dee19c686a2af4edcdc1a1042}\label{_game_graphics_8h_a1e9a449dee19c686a2af4edcdc1a1042}} 
+\index{GameGraphics.h@{GameGraphics.h}!KEY\_BACKSPACE@{KEY\_BACKSPACE}}
+\index{KEY\_BACKSPACE@{KEY\_BACKSPACE}!GameGraphics.h@{GameGraphics.h}}
+\doxysubsubsection{\texorpdfstring{KEY\_BACKSPACE}{KEY\_BACKSPACE}}
+{\footnotesize\ttfamily \#define KEY\+\_\+\+BACKSPACE~(127)}
+
+valore del tasto BACKSPACE \mbox{\Hypertarget{_game_graphics_8h_a203163bc0189184a1de6ca8d1e53c6bf}\label{_game_graphics_8h_a203163bc0189184a1de6ca8d1e53c6bf}} 
+\index{GameGraphics.h@{GameGraphics.h}!KEY\_DOWN@{KEY\_DOWN}}
+\index{KEY\_DOWN@{KEY\_DOWN}!GameGraphics.h@{GameGraphics.h}}
+\doxysubsubsection{\texorpdfstring{KEY\_DOWN}{KEY\_DOWN}}
+{\footnotesize\ttfamily \#define KEY\+\_\+\+DOWN~(258)}
+
+valore del tasto freccia giù \mbox{\Hypertarget{_game_graphics_8h_abaee5edb96e542206ae6c8102ac228af}\label{_game_graphics_8h_abaee5edb96e542206ae6c8102ac228af}} 
+\index{GameGraphics.h@{GameGraphics.h}!KEY\_ENTER@{KEY\_ENTER}}
+\index{KEY\_ENTER@{KEY\_ENTER}!GameGraphics.h@{GameGraphics.h}}
+\doxysubsubsection{\texorpdfstring{KEY\_ENTER}{KEY\_ENTER}}
+{\footnotesize\ttfamily \#define KEY\+\_\+\+ENTER~(10)}
+
+valore del tasto INVIO \mbox{\Hypertarget{_game_graphics_8h_af4d1b8a2912354646c74cf36c69f8223}\label{_game_graphics_8h_af4d1b8a2912354646c74cf36c69f8223}} 
+\index{GameGraphics.h@{GameGraphics.h}!KEY\_LEFT@{KEY\_LEFT}}
+\index{KEY\_LEFT@{KEY\_LEFT}!GameGraphics.h@{GameGraphics.h}}
+\doxysubsubsection{\texorpdfstring{KEY\_LEFT}{KEY\_LEFT}}
+{\footnotesize\ttfamily \#define KEY\+\_\+\+LEFT~(260)}
+
+valore del tasto freccia sinistra \mbox{\Hypertarget{_game_graphics_8h_a004194639b9ad76cea01d9e93716d4d6}\label{_game_graphics_8h_a004194639b9ad76cea01d9e93716d4d6}} 
+\index{GameGraphics.h@{GameGraphics.h}!KEY\_RIGHT@{KEY\_RIGHT}}
+\index{KEY\_RIGHT@{KEY\_RIGHT}!GameGraphics.h@{GameGraphics.h}}
+\doxysubsubsection{\texorpdfstring{KEY\_RIGHT}{KEY\_RIGHT}}
+{\footnotesize\ttfamily \#define KEY\+\_\+\+RIGHT~(261)}
+
+valore del tasto freccia destra \mbox{\Hypertarget{_game_graphics_8h_afa086fc916a81e7fd348ec00cf786916}\label{_game_graphics_8h_afa086fc916a81e7fd348ec00cf786916}} 
+\index{GameGraphics.h@{GameGraphics.h}!KEY\_UP@{KEY\_UP}}
+\index{KEY\_UP@{KEY\_UP}!GameGraphics.h@{GameGraphics.h}}
+\doxysubsubsection{\texorpdfstring{KEY\_UP}{KEY\_UP}}
+{\footnotesize\ttfamily \#define KEY\+\_\+\+UP~(259)}
+
+valore del tasto freccia su 
+
+\doxysubsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{_game_graphics_8h_ae618a3ecbb0d62500bfff666b12b8afc}\label{_game_graphics_8h_ae618a3ecbb0d62500bfff666b12b8afc}} 
+\index{GameGraphics.h@{GameGraphics.h}!clear\_all@{clear\_all}}
+\index{clear\_all@{clear\_all}!GameGraphics.h@{GameGraphics.h}}
+\doxysubsubsection{\texorpdfstring{clear\_all()}{clear\_all()}}
+{\footnotesize\ttfamily void clear\+\_\+all (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Cancella tutta la grafica dalla schermata \mbox{\Hypertarget{_game_graphics_8h_adb8bec540bfee30a8ed42c235e8c6533}\label{_game_graphics_8h_adb8bec540bfee30a8ed42c235e8c6533}} 
+\index{GameGraphics.h@{GameGraphics.h}!game\_over\_graphics\_free@{game\_over\_graphics\_free}}
+\index{game\_over\_graphics\_free@{game\_over\_graphics\_free}!GameGraphics.h@{GameGraphics.h}}
+\doxysubsubsection{\texorpdfstring{game\_over\_graphics\_free()}{game\_over\_graphics\_free()}}
+{\footnotesize\ttfamily void game\+\_\+over\+\_\+graphics\+\_\+free (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Libera la memoria allocata per la grafica del game over \mbox{\Hypertarget{_game_graphics_8h_a05822b0ec3253d70214187eee80ce6a9}\label{_game_graphics_8h_a05822b0ec3253d70214187eee80ce6a9}} 
+\index{GameGraphics.h@{GameGraphics.h}!get\_input@{get\_input}}
+\index{get\_input@{get\_input}!GameGraphics.h@{GameGraphics.h}}
+\doxysubsubsection{\texorpdfstring{get\_input()}{get\_input()}}
+{\footnotesize\ttfamily int get\+\_\+input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Attende l\textquotesingle{}input da tastiera dell\textquotesingle{}utente \begin{DoxyReturn}{Restituisce}
+valore del tasto premuto 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_game_graphics_8h_aab84050db52467f88c9758ed260c54ef}\label{_game_graphics_8h_aab84050db52467f88c9758ed260c54ef}} 
+\index{GameGraphics.h@{GameGraphics.h}!multi\_graphics\_free@{multi\_graphics\_free}}
+\index{multi\_graphics\_free@{multi\_graphics\_free}!GameGraphics.h@{GameGraphics.h}}
+\doxysubsubsection{\texorpdfstring{multi\_graphics\_free()}{multi\_graphics\_free()}}
+{\footnotesize\ttfamily void multi\+\_\+graphics\+\_\+free (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Libera la memoria allocata per la grafica di una partita multiplayer \mbox{\Hypertarget{_game_graphics_8h_af83bd7d240e6871c6b4be0f887b186e8}\label{_game_graphics_8h_af83bd7d240e6871c6b4be0f887b186e8}} 
+\index{GameGraphics.h@{GameGraphics.h}!multi\_graphics\_init@{multi\_graphics\_init}}
+\index{multi\_graphics\_init@{multi\_graphics\_init}!GameGraphics.h@{GameGraphics.h}}
+\doxysubsubsection{\texorpdfstring{multi\_graphics\_init()}{multi\_graphics\_init()}}
+{\footnotesize\ttfamily void multi\+\_\+graphics\+\_\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Alloca la memoria per la grafica di una partita multiplayer \mbox{\Hypertarget{_game_graphics_8h_a94076ca6e85e191d5347876d03d596c6}\label{_game_graphics_8h_a94076ca6e85e191d5347876d03d596c6}} 
+\index{GameGraphics.h@{GameGraphics.h}!print\_game\_over@{print\_game\_over}}
+\index{print\_game\_over@{print\_game\_over}!GameGraphics.h@{GameGraphics.h}}
+\doxysubsubsection{\texorpdfstring{print\_game\_over()}{print\_game\_over()}}
+{\footnotesize\ttfamily void print\+\_\+game\+\_\+over (\begin{DoxyParamCaption}\item[{char $\ast$}]{info }\end{DoxyParamCaption})}
+
+Stampa la schermata di game over, con una stringa di specificazione, con a capo automatico e senza spezzare le parole 
+\begin{DoxyParams}{Parametri}
+{\em info} & stringa da stampare \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_game_graphics_8h_a05d07d13775440ac81d3a0903905032a}\label{_game_graphics_8h_a05d07d13775440ac81d3a0903905032a}} 
+\index{GameGraphics.h@{GameGraphics.h}!print\_info@{print\_info}}
+\index{print\_info@{print\_info}!GameGraphics.h@{GameGraphics.h}}
+\doxysubsubsection{\texorpdfstring{print\_info()}{print\_info()}}
+{\footnotesize\ttfamily void print\+\_\+info (\begin{DoxyParamCaption}\item[{char $\ast$}]{info }\end{DoxyParamCaption})}
+
+Stampa una stringa nel riquadro informazioni, con a capo automatico e senza spezzare le parole 
+\begin{DoxyParams}{Parametri}
+{\em info} & stringa da stampare \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_game_graphics_8h_a62247fd098369a87484c95c326d9110c}\label{_game_graphics_8h_a62247fd098369a87484c95c326d9110c}} 
+\index{GameGraphics.h@{GameGraphics.h}!print\_player\_field@{print\_player\_field}}
+\index{print\_player\_field@{print\_player\_field}!GameGraphics.h@{GameGraphics.h}}
+\doxysubsubsection{\texorpdfstring{print\_player\_field()}{print\_player\_field()}}
+{\footnotesize\ttfamily void print\+\_\+player\+\_\+field (\begin{DoxyParamCaption}\item[{int}]{field\mbox{[}\+FIELD\+\_\+\+ROWS\mbox{]}\mbox{[}\+FIELD\+\_\+\+COLS\mbox{]},  }\item[{int}]{player }\end{DoxyParamCaption})}
+
+Stampa il campo di un giocatore nel suo riquadro. Distingue i tetramini e usa colri diversi per ciascuno 
+\begin{DoxyParams}{Parametri}
+{\em field} & campo da stampare \\
+\hline
+{\em player} & giocatore per il quale stampare il campo \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_game_graphics_8h_ab1047fa1076eda8ecf664cad4e673aa0}\label{_game_graphics_8h_ab1047fa1076eda8ecf664cad4e673aa0}} 
+\index{GameGraphics.h@{GameGraphics.h}!print\_player\_score@{print\_player\_score}}
+\index{print\_player\_score@{print\_player\_score}!GameGraphics.h@{GameGraphics.h}}
+\doxysubsubsection{\texorpdfstring{print\_player\_score()}{print\_player\_score()}}
+{\footnotesize\ttfamily void print\+\_\+player\+\_\+score (\begin{DoxyParamCaption}\item[{int}]{score,  }\item[{int}]{player }\end{DoxyParamCaption})}
+
+Stampa il punteggio di un giocatore nel suo riquadro. 
+\begin{DoxyParams}{Parametri}
+{\em score} & valore da stampare \\
+\hline
+{\em player} & giocatore per il quale stampare il punteggio \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_game_graphics_8h_af2091d43d573cbae6a8543fca9c71672}\label{_game_graphics_8h_af2091d43d573cbae6a8543fca9c71672}} 
+\index{GameGraphics.h@{GameGraphics.h}!print\_tet@{print\_tet}}
+\index{print\_tet@{print\_tet}!GameGraphics.h@{GameGraphics.h}}
+\doxysubsubsection{\texorpdfstring{print\_tet()}{print\_tet()}}
+{\footnotesize\ttfamily void print\+\_\+tet (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_pieces_8h_a58ddb9bd67b81b90ed44c085b09bbb98}{tet\+\_\+t}}}]{tet }\end{DoxyParamCaption})}
+
+Stampa a video un tetramino, nel suo riquadro e con la forma (rotazione) corrente 
+\begin{DoxyParams}{Parametri}
+{\em tet} & il tetramino da stampare \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_game_graphics_8h_ae0e45fef884bc70eeec50e315dd0cda6}\label{_game_graphics_8h_ae0e45fef884bc70eeec50e315dd0cda6}} 
+\index{GameGraphics.h@{GameGraphics.h}!print\_turn@{print\_turn}}
+\index{print\_turn@{print\_turn}!GameGraphics.h@{GameGraphics.h}}
+\doxysubsubsection{\texorpdfstring{print\_turn()}{print\_turn()}}
+{\footnotesize\ttfamily void print\+\_\+turn (\begin{DoxyParamCaption}\item[{int}]{direction\+\_\+sx }\end{DoxyParamCaption})}
+
+Stampa una freccia che indica di chi è il turno. 
+\begin{DoxyParams}{Parametri}
+{\em direction\+\_\+sx} & se TRUE la freccia punta a sinistra, altrimenti a destra \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_game_graphics_8h_a60e87ca23acb293f0813a9513843c3d1}\label{_game_graphics_8h_a60e87ca23acb293f0813a9513843c3d1}} 
+\index{GameGraphics.h@{GameGraphics.h}!single\_graphics\_free@{single\_graphics\_free}}
+\index{single\_graphics\_free@{single\_graphics\_free}!GameGraphics.h@{GameGraphics.h}}
+\doxysubsubsection{\texorpdfstring{single\_graphics\_free()}{single\_graphics\_free()}}
+{\footnotesize\ttfamily void single\+\_\+graphics\+\_\+free (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Libera la memoria allocata per la grafica di una partita singleplayer \mbox{\Hypertarget{_game_graphics_8h_ad1f9b0f16c22065c594046d7090462c7}\label{_game_graphics_8h_ad1f9b0f16c22065c594046d7090462c7}} 
+\index{GameGraphics.h@{GameGraphics.h}!single\_graphics\_init@{single\_graphics\_init}}
+\index{single\_graphics\_init@{single\_graphics\_init}!GameGraphics.h@{GameGraphics.h}}
+\doxysubsubsection{\texorpdfstring{single\_graphics\_init()}{single\_graphics\_init()}}
+{\footnotesize\ttfamily void single\+\_\+graphics\+\_\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Alloca la memoria per la grafica di una partita singleplayer 
